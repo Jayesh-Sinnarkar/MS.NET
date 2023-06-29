@@ -132,8 +132,9 @@ namespace ASSIGNMENT_3
         {
             set
             {
-                if (80000 >= value && value >= 30000)
+                if (80000 >= value && value > 30000)
                     Basic = value;
+                else Console.WriteLine("Invalid salary");
             }
             get { return Basic; }
         }
@@ -203,8 +204,10 @@ namespace ASSIGNMENT_3
         {
             set
             {
-                if (50000 >= value && value >= 15000)
+                if (50000 >= value && value > 15000)
                     Basic = value;
+                else Console.WriteLine("Invalid salary");
+
             }
             get { return Basic; }
         }
@@ -238,14 +241,18 @@ namespace ASSIGNMENT_3
     {
 
         //OVERRIDEN BASIC SALARY PROPERTY
+        private decimal _basic;
         public override decimal Basic
         {
             set
             {
-                if (150000 >= value && value >= 15000)
-                    Basic = value;
+                if (150000 >= value && value > 15000)
+                {
+                    _basic = value;
+                }
+                else Console.WriteLine("Invalid Basic Salary");
             }
-            get { return Basic; }
+            get { return _basic; }
         }
 
 
@@ -255,7 +262,7 @@ namespace ASSIGNMENT_3
         //CALLING SUPER CLASS CTOR
         public CEO( string name = "", short deptNo = 0, decimal basic = 0) : base(name, deptNo, basic)
         {
-            
+            this.Basic = basic;
         }
 
 

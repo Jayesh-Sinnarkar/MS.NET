@@ -1,0 +1,15 @@
+D:\Trainings\ActsJune23\Day2\StaticMembers\bin\Debug\net7.0\StaticMembers.exe
+D:\Trainings\ActsJune23\Day2\StaticMembers\bin\Debug\net7.0\StaticMembers.deps.json
+D:\Trainings\ActsJune23\Day2\StaticMembers\bin\Debug\net7.0\StaticMembers.runtimeconfig.json
+D:\Trainings\ActsJune23\Day2\StaticMembers\bin\Debug\net7.0\StaticMembers.dll
+D:\Trainings\ActsJune23\Day2\StaticMembers\bin\Debug\net7.0\StaticMembers.pdb
+D:\Trainings\ActsJune23\Day2\StaticMembers\obj\Debug\net7.0\StaticMembers.csproj.AssemblyReference.cache
+D:\Trainings\ActsJune23\Day2\StaticMembers\obj\Debug\net7.0\StaticMembers.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trainings\ActsJune23\Day2\StaticMembers\obj\Debug\net7.0\StaticMembers.AssemblyInfoInputs.cache
+D:\Trainings\ActsJune23\Day2\StaticMembers\obj\Debug\net7.0\StaticMembers.AssemblyInfo.cs
+D:\Trainings\ActsJune23\Day2\StaticMembers\obj\Debug\net7.0\StaticMembers.csproj.CoreCompileInputs.cache
+D:\Trainings\ActsJune23\Day2\StaticMembers\obj\Debug\net7.0\StaticMembers.dll
+D:\Trainings\ActsJune23\Day2\StaticMembers\obj\Debug\net7.0\refint\StaticMembers.dll
+D:\Trainings\ActsJune23\Day2\StaticMembers\obj\Debug\net7.0\StaticMembers.pdb
+D:\Trainings\ActsJune23\Day2\StaticMembers\obj\Debug\net7.0\StaticMembers.genruntimeconfig.cache
+D:\Trainings\ActsJune23\Day2\StaticMembers\obj\Debug\net7.0\ref\StaticMembers.dll

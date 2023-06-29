@@ -1,0 +1,15 @@
+D:\Trainings\ActsJune23\Day3\NullableTypes\bin\Debug\net7.0\NullableTypes.exe
+D:\Trainings\ActsJune23\Day3\NullableTypes\bin\Debug\net7.0\NullableTypes.deps.json
+D:\Trainings\ActsJune23\Day3\NullableTypes\bin\Debug\net7.0\NullableTypes.runtimeconfig.json
+D:\Trainings\ActsJune23\Day3\NullableTypes\bin\Debug\net7.0\NullableTypes.dll
+D:\Trainings\ActsJune23\Day3\NullableTypes\bin\Debug\net7.0\NullableTypes.pdb
+D:\Trainings\ActsJune23\Day3\NullableTypes\obj\Debug\net7.0\NullableTypes.csproj.AssemblyReference.cache
+D:\Trainings\ActsJune23\Day3\NullableTypes\obj\Debug\net7.0\NullableTypes.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trainings\ActsJune23\Day3\NullableTypes\obj\Debug\net7.0\NullableTypes.AssemblyInfoInputs.cache
+D:\Trainings\ActsJune23\Day3\NullableTypes\obj\Debug\net7.0\NullableTypes.AssemblyInfo.cs
+D:\Trainings\ActsJune23\Day3\NullableTypes\obj\Debug\net7.0\NullableTypes.csproj.CoreCompileInputs.cache
+D:\Trainings\ActsJune23\Day3\NullableTypes\obj\Debug\net7.0\NullableTypes.dll
+D:\Trainings\ActsJune23\Day3\NullableTypes\obj\Debug\net7.0\refint\NullableTypes.dll
+D:\Trainings\ActsJune23\Day3\NullableTypes\obj\Debug\net7.0\NullableTypes.pdb
+D:\Trainings\ActsJune23\Day3\NullableTypes\obj\Debug\net7.0\NullableTypes.genruntimeconfig.cache
+D:\Trainings\ActsJune23\Day3\NullableTypes\obj\Debug\net7.0\ref\NullableTypes.dll

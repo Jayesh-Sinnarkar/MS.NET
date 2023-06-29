@@ -1,0 +1,15 @@
+D:\Trainings\ActsJune23\Day3\GenericsExample\bin\Debug\net7.0\GenericsExample.exe
+D:\Trainings\ActsJune23\Day3\GenericsExample\bin\Debug\net7.0\GenericsExample.deps.json
+D:\Trainings\ActsJune23\Day3\GenericsExample\bin\Debug\net7.0\GenericsExample.runtimeconfig.json
+D:\Trainings\ActsJune23\Day3\GenericsExample\bin\Debug\net7.0\GenericsExample.dll
+D:\Trainings\ActsJune23\Day3\GenericsExample\bin\Debug\net7.0\GenericsExample.pdb
+D:\Trainings\ActsJune23\Day3\GenericsExample\obj\Debug\net7.0\GenericsExample.csproj.AssemblyReference.cache
+D:\Trainings\ActsJune23\Day3\GenericsExample\obj\Debug\net7.0\GenericsExample.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trainings\ActsJune23\Day3\GenericsExample\obj\Debug\net7.0\GenericsExample.AssemblyInfoInputs.cache
+D:\Trainings\ActsJune23\Day3\GenericsExample\obj\Debug\net7.0\GenericsExample.AssemblyInfo.cs
+D:\Trainings\ActsJune23\Day3\GenericsExample\obj\Debug\net7.0\GenericsExample.csproj.CoreCompileInputs.cache
+D:\Trainings\ActsJune23\Day3\GenericsExample\obj\Debug\net7.0\GenericsExample.dll
+D:\Trainings\ActsJune23\Day3\GenericsExample\obj\Debug\net7.0\refint\GenericsExample.dll
+D:\Trainings\ActsJune23\Day3\GenericsExample\obj\Debug\net7.0\GenericsExample.pdb
+D:\Trainings\ActsJune23\Day3\GenericsExample\obj\Debug\net7.0\GenericsExample.genruntimeconfig.cache
+D:\Trainings\ActsJune23\Day3\GenericsExample\obj\Debug\net7.0\ref\GenericsExample.dll

@@ -1,0 +1,15 @@
+D:\Trainings\ActsJune23\Day2\InterfaceExamples\obj\Debug\net7.0\InterfaceExamples.csproj.AssemblyReference.cache
+D:\Trainings\ActsJune23\Day2\InterfaceExamples\obj\Debug\net7.0\InterfaceExamples.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trainings\ActsJune23\Day2\InterfaceExamples\obj\Debug\net7.0\InterfaceExamples.AssemblyInfoInputs.cache
+D:\Trainings\ActsJune23\Day2\InterfaceExamples\obj\Debug\net7.0\InterfaceExamples.AssemblyInfo.cs
+D:\Trainings\ActsJune23\Day2\InterfaceExamples\obj\Debug\net7.0\InterfaceExamples.csproj.CoreCompileInputs.cache
+D:\Trainings\ActsJune23\Day2\InterfaceExamples\bin\Debug\net7.0\InterfaceExamples.exe
+D:\Trainings\ActsJune23\Day2\InterfaceExamples\bin\Debug\net7.0\InterfaceExamples.deps.json
+D:\Trainings\ActsJune23\Day2\InterfaceExamples\bin\Debug\net7.0\InterfaceExamples.runtimeconfig.json
+D:\Trainings\ActsJune23\Day2\InterfaceExamples\bin\Debug\net7.0\InterfaceExamples.dll
+D:\Trainings\ActsJune23\Day2\InterfaceExamples\bin\Debug\net7.0\InterfaceExamples.pdb
+D:\Trainings\ActsJune23\Day2\InterfaceExamples\obj\Debug\net7.0\InterfaceExamples.dll
+D:\Trainings\ActsJune23\Day2\InterfaceExamples\obj\Debug\net7.0\refint\InterfaceExamples.dll
+D:\Trainings\ActsJune23\Day2\InterfaceExamples\obj\Debug\net7.0\InterfaceExamples.pdb
+D:\Trainings\ActsJune23\Day2\InterfaceExamples\obj\Debug\net7.0\InterfaceExamples.genruntimeconfig.cache
+D:\Trainings\ActsJune23\Day2\InterfaceExamples\obj\Debug\net7.0\ref\InterfaceExamples.dll

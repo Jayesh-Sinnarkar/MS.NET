@@ -1,0 +1,15 @@
+D:\Trainings\ActsJune23\Day2\DefaultImplentationInInterfaces\bin\Debug\net7.0\DefaultImplentationInInterfaces.exe
+D:\Trainings\ActsJune23\Day2\DefaultImplentationInInterfaces\bin\Debug\net7.0\DefaultImplentationInInterfaces.deps.json
+D:\Trainings\ActsJune23\Day2\DefaultImplentationInInterfaces\bin\Debug\net7.0\DefaultImplentationInInterfaces.runtimeconfig.json
+D:\Trainings\ActsJune23\Day2\DefaultImplentationInInterfaces\bin\Debug\net7.0\DefaultImplentationInInterfaces.dll
+D:\Trainings\ActsJune23\Day2\DefaultImplentationInInterfaces\bin\Debug\net7.0\DefaultImplentationInInterfaces.pdb
+D:\Trainings\ActsJune23\Day2\DefaultImplentationInInterfaces\obj\Debug\net7.0\DefaultImplentationInInterfaces.csproj.AssemblyReference.cache
+D:\Trainings\ActsJune23\Day2\DefaultImplentationInInterfaces\obj\Debug\net7.0\DefaultImplentationInInterfaces.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trainings\ActsJune23\Day2\DefaultImplentationInInterfaces\obj\Debug\net7.0\DefaultImplentationInInterfaces.AssemblyInfoInputs.cache
+D:\Trainings\ActsJune23\Day2\DefaultImplentationInInterfaces\obj\Debug\net7.0\DefaultImplentationInInterfaces.AssemblyInfo.cs
+D:\Trainings\ActsJune23\Day2\DefaultImplentationInInterfaces\obj\Debug\net7.0\DefaultImplentationInInterfaces.csproj.CoreCompileInputs.cache
+D:\Trainings\ActsJune23\Day2\DefaultImplentationInInterfaces\obj\Debug\net7.0\DefaultImplentationInInterfaces.dll
+D:\Trainings\ActsJune23\Day2\DefaultImplentationInInterfaces\obj\Debug\net7.0\refint\DefaultImplentationInInterfaces.dll
+D:\Trainings\ActsJune23\Day2\DefaultImplentationInInterfaces\obj\Debug\net7.0\DefaultImplentationInInterfaces.pdb
+D:\Trainings\ActsJune23\Day2\DefaultImplentationInInterfaces\obj\Debug\net7.0\DefaultImplentationInInterfaces.genruntimeconfig.cache
+D:\Trainings\ActsJune23\Day2\DefaultImplentationInInterfaces\obj\Debug\net7.0\ref\DefaultImplentationInInterfaces.dll

@@ -1,0 +1,15 @@
+C:\Users\jayes\OneDrive\Documents\MS.NET\ASSIGNMENTS\ASSIGNMENT_4\bin\Debug\net7.0\ASSIGNMENT_4_1.exe
+C:\Users\jayes\OneDrive\Documents\MS.NET\ASSIGNMENTS\ASSIGNMENT_4\bin\Debug\net7.0\ASSIGNMENT_4_1.deps.json
+C:\Users\jayes\OneDrive\Documents\MS.NET\ASSIGNMENTS\ASSIGNMENT_4\bin\Debug\net7.0\ASSIGNMENT_4_1.runtimeconfig.json
+C:\Users\jayes\OneDrive\Documents\MS.NET\ASSIGNMENTS\ASSIGNMENT_4\bin\Debug\net7.0\ASSIGNMENT_4_1.dll
+C:\Users\jayes\OneDrive\Documents\MS.NET\ASSIGNMENTS\ASSIGNMENT_4\bin\Debug\net7.0\ASSIGNMENT_4_1.pdb
+C:\Users\jayes\OneDrive\Documents\MS.NET\ASSIGNMENTS\ASSIGNMENT_4\obj\Debug\net7.0\ASSIGNMENT_4_1.csproj.AssemblyReference.cache
+C:\Users\jayes\OneDrive\Documents\MS.NET\ASSIGNMENTS\ASSIGNMENT_4\obj\Debug\net7.0\ASSIGNMENT_4_1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jayes\OneDrive\Documents\MS.NET\ASSIGNMENTS\ASSIGNMENT_4\obj\Debug\net7.0\ASSIGNMENT_4_1.AssemblyInfoInputs.cache
+C:\Users\jayes\OneDrive\Documents\MS.NET\ASSIGNMENTS\ASSIGNMENT_4\obj\Debug\net7.0\ASSIGNMENT_4_1.AssemblyInfo.cs
+C:\Users\jayes\OneDrive\Documents\MS.NET\ASSIGNMENTS\ASSIGNMENT_4\obj\Debug\net7.0\ASSIGNMENT_4_1.csproj.CoreCompileInputs.cache
+C:\Users\jayes\OneDrive\Documents\MS.NET\ASSIGNMENTS\ASSIGNMENT_4\obj\Debug\net7.0\ASSIGNMENT_4_1.dll
+C:\Users\jayes\OneDrive\Documents\MS.NET\ASSIGNMENTS\ASSIGNMENT_4\obj\Debug\net7.0\refint\ASSIGNMENT_4_1.dll
+C:\Users\jayes\OneDrive\Documents\MS.NET\ASSIGNMENTS\ASSIGNMENT_4\obj\Debug\net7.0\ASSIGNMENT_4_1.pdb
+C:\Users\jayes\OneDrive\Documents\MS.NET\ASSIGNMENTS\ASSIGNMENT_4\obj\Debug\net7.0\ASSIGNMENT_4_1.genruntimeconfig.cache
+C:\Users\jayes\OneDrive\Documents\MS.NET\ASSIGNMENTS\ASSIGNMENT_4\obj\Debug\net7.0\ref\ASSIGNMENT_4_1.dll

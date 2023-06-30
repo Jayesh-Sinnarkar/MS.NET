@@ -42,8 +42,21 @@ namespace ASSIGNMENT_3
     {
         public static void Main()
         {
-            Employee employee = new CEO("Jayesh", 1001, 150000);
-            Console.WriteLine(employee);
+            Employee employee = new CEO("Jayesh", 1001, 15500);
+            Console.Write(employee.CalcNetSalary());
+            Console.WriteLine("\n"+employee);
+            Console.WriteLine();
+
+            Employee employee2 = new Manager("OpsMgr", "Shubham", 1002, 50000);
+            Console.WriteLine(employee2.CalcNetSalary());
+            Console.WriteLine(employee2);
+            Console.WriteLine();
+
+            Employee employee3 = new GeneralManager("Car", "GRPM", "Vaibhav", 1003, 25000);
+            Console.WriteLine(employee3.CalcNetSalary());
+            Console.WriteLine(employee3);
+            Console.WriteLine();
+
         }
     }
 
@@ -127,22 +140,24 @@ namespace ASSIGNMENT_3
     }
     class Manager : Employee, IDBFunctions
     {
+        private decimal basic;
         //OVERRIDEN BASIC SALARY PROPERTY
         public override decimal Basic
         {
             set
             {
                 if (80000 >= value && value > 30000)
-                    Basic = value;
-                else Console.WriteLine("Invalid salary");
+                    basic = value;
+                else Console.WriteLine("Invalid salary - Manager");
             }
-            get { return Basic; }
+            get { return basic; }
         }
 
         //CALLING SUPER CLASS CTOR
         public Manager(String Designation="", string name = "", short deptNo = 0, decimal basic = 0) : base(name,deptNo,basic)
         {
             this.Designation = Designation;
+            this.Basic= basic;
         }
 
 
@@ -163,6 +178,7 @@ namespace ASSIGNMENT_3
         //CalcNetSalary()
         public override decimal CalcNetSalary()
         {
+            Console.Write("\nManager Salary: ");
             return 12 + 50000;
         }
 
@@ -198,7 +214,7 @@ namespace ASSIGNMENT_3
 
 
 
-
+        private decimal basic;
         //OVERRIDEN BASIC SALARY PROPERTY
 
         private decimal _base;
@@ -207,17 +223,20 @@ namespace ASSIGNMENT_3
             set
             {
                 if (50000 >= value && value > 15000)
+
                     _base = value;
                 else Console.WriteLine("Invalid salary");
 
             }
             get { return _base; }
+
+   
         }
 
 
 
         //CALLING SUPER CLASS CTOR
-        public GeneralManager(string perks = "", string designation="", string name = "", short deptNo = 0, decimal basic = 0) : base(name,designation,deptNo,basic)
+        public GeneralManager(string perks = "", string designation="", string name = "", short deptNo = 0, decimal basic = 0) : base(designation, name,deptNo,basic)
         {
             this.Perks = perks;
         }
@@ -228,14 +247,16 @@ namespace ASSIGNMENT_3
         //CalcNetSalary()
         public override decimal CalcNetSalary()
         {
+
             return base.Basic+25000;
+
         }
 
 
         //Override ToString
         public override string ToString()
         {
-            return "General Manager [ "+base.ToString() + " Perks: " + Perks+" ]";
+            return "General Manager [ "+ " Name: " + Name + ", EmpId:" + EmpNo + ",  DeptNo: " + DeptNo + ", Basic:" + Basic + " " + " Perks: " + Perks + " Designation: " + Designation + " ]";
         }
     }
 
@@ -243,18 +264,18 @@ namespace ASSIGNMENT_3
     {
 
         //OVERRIDEN BASIC SALARY PROPERTY
-        private decimal _basic;
+        private decimal basic;
         public override decimal Basic
         {
             set
             {
                 if (150000 >= value && value > 15000)
                 {
-                    _basic = value;
+                    basic = value;
                 }
-                else Console.WriteLine("Invalid Basic Salary");
+                else Console.WriteLine("Invalid Basic Salary - CEO");
             }
-            get { return _basic; }
+            get { return basic; }
         }
 
 
@@ -271,6 +292,7 @@ namespace ASSIGNMENT_3
         //CalcNetSalary()
         public sealed override decimal CalcNetSalary()
         {
+            Console.Write("CEO Salary: ");
             return Basic + 250000;
         }
 

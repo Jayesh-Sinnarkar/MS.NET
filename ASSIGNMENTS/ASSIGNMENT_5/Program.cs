@@ -10,7 +10,9 @@ Display details for the Nth Employee where N is a number accepted from the user.
 
 2. Create an array of Employee objects. Convert it to a List<Employee>.  Display all the Employees in the list.
 
-3. Create a List<Employee>. Convert it to an array. Display all the array elements.*/
+3. Create a List<Employee>. Convert it to an array. Display all the array elements.
+
+ */
 
 namespace ASSIGNMENT_5
 {
@@ -37,7 +39,7 @@ namespace ASSIGNMENT_5
                         case 1://1. Create New Employee Record.
                             Console.Write("Enter No of Employees to register: ");
                             int empCount = Convert.ToInt32(Console.ReadLine());
-                            //Dictionary<int,Employee> emps = new Dictionary<int,Employee>();
+                           
                             for(int i = 0; i<empCount; i++)
                             {
                                 Console.WriteLine($"\nEnter Employee {i+1} Details.");

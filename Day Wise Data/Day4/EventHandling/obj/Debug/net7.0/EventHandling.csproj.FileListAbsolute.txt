@@ -1,0 +1,15 @@
+D:\Trainings\ActsJune23\Day4\EventHandling\obj\Debug\net7.0\EventHandling.csproj.AssemblyReference.cache
+D:\Trainings\ActsJune23\Day4\EventHandling\obj\Debug\net7.0\EventHandling.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trainings\ActsJune23\Day4\EventHandling\obj\Debug\net7.0\EventHandling.AssemblyInfoInputs.cache
+D:\Trainings\ActsJune23\Day4\EventHandling\obj\Debug\net7.0\EventHandling.AssemblyInfo.cs
+D:\Trainings\ActsJune23\Day4\EventHandling\obj\Debug\net7.0\EventHandling.csproj.CoreCompileInputs.cache
+D:\Trainings\ActsJune23\Day4\EventHandling\bin\Debug\net7.0\EventHandling.exe
+D:\Trainings\ActsJune23\Day4\EventHandling\bin\Debug\net7.0\EventHandling.deps.json
+D:\Trainings\ActsJune23\Day4\EventHandling\bin\Debug\net7.0\EventHandling.runtimeconfig.json
+D:\Trainings\ActsJune23\Day4\EventHandling\bin\Debug\net7.0\EventHandling.dll
+D:\Trainings\ActsJune23\Day4\EventHandling\bin\Debug\net7.0\EventHandling.pdb
+D:\Trainings\ActsJune23\Day4\EventHandling\obj\Debug\net7.0\EventHandling.dll
+D:\Trainings\ActsJune23\Day4\EventHandling\obj\Debug\net7.0\refint\EventHandling.dll
+D:\Trainings\ActsJune23\Day4\EventHandling\obj\Debug\net7.0\EventHandling.pdb
+D:\Trainings\ActsJune23\Day4\EventHandling\obj\Debug\net7.0\EventHandling.genruntimeconfig.cache
+D:\Trainings\ActsJune23\Day4\EventHandling\obj\Debug\net7.0\ref\EventHandling.dll

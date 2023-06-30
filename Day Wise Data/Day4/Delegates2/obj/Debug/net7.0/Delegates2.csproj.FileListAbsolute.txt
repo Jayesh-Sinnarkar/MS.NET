@@ -1,0 +1,15 @@
+D:\Trainings\ActsJune23\Day4\Delegates2\bin\Debug\net7.0\Delegates2.exe
+D:\Trainings\ActsJune23\Day4\Delegates2\bin\Debug\net7.0\Delegates2.deps.json
+D:\Trainings\ActsJune23\Day4\Delegates2\bin\Debug\net7.0\Delegates2.runtimeconfig.json
+D:\Trainings\ActsJune23\Day4\Delegates2\bin\Debug\net7.0\Delegates2.dll
+D:\Trainings\ActsJune23\Day4\Delegates2\bin\Debug\net7.0\Delegates2.pdb
+D:\Trainings\ActsJune23\Day4\Delegates2\obj\Debug\net7.0\Delegates2.csproj.AssemblyReference.cache
+D:\Trainings\ActsJune23\Day4\Delegates2\obj\Debug\net7.0\Delegates2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trainings\ActsJune23\Day4\Delegates2\obj\Debug\net7.0\Delegates2.AssemblyInfoInputs.cache
+D:\Trainings\ActsJune23\Day4\Delegates2\obj\Debug\net7.0\Delegates2.AssemblyInfo.cs
+D:\Trainings\ActsJune23\Day4\Delegates2\obj\Debug\net7.0\Delegates2.csproj.CoreCompileInputs.cache
+D:\Trainings\ActsJune23\Day4\Delegates2\obj\Debug\net7.0\Delegates2.dll
+D:\Trainings\ActsJune23\Day4\Delegates2\obj\Debug\net7.0\refint\Delegates2.dll
+D:\Trainings\ActsJune23\Day4\Delegates2\obj\Debug\net7.0\Delegates2.pdb
+D:\Trainings\ActsJune23\Day4\Delegates2\obj\Debug\net7.0\Delegates2.genruntimeconfig.cache
+D:\Trainings\ActsJune23\Day4\Delegates2\obj\Debug\net7.0\ref\Delegates2.dll

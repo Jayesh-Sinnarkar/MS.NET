@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates2", "Delegates2\Delegates2.csproj", "{608E7CF9-7908-4FBE-AE84-C4CBA8D338B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ActionFuncPredicate", "ActionFuncPredicate\ActionFuncPredicate.csproj", "{DDBB6EC2-6D0C-4767-B103-54A52059D94D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnonMethodsAndLambdas", "AnonMethodsAndLambdas\AnonMethodsAndLambdas.csproj", "{C4A355AE-4941-4864-8C6B-696CE2F49547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{08572D78-C144-400E-85D6-0EAF1015F627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{EEF26ACA-12ED-4C66-B088-E734D1C1AF86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventHandling", "EventHandling\EventHandling.csproj", "{B2D8214E-19D4-430F-B0AB-B4D204993131}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDisposableExample", "IDisposableExample\IDisposableExample.csproj", "{ECE0D577-A370-46D8-8945-D456D07E4935}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{608E7CF9-7908-4FBE-AE84-C4CBA8D338B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{608E7CF9-7908-4FBE-AE84-C4CBA8D338B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{608E7CF9-7908-4FBE-AE84-C4CBA8D338B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{608E7CF9-7908-4FBE-AE84-C4CBA8D338B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDBB6EC2-6D0C-4767-B103-54A52059D94D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDBB6EC2-6D0C-4767-B103-54A52059D94D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDBB6EC2-6D0C-4767-B103-54A52059D94D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDBB6EC2-6D0C-4767-B103-54A52059D94D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4A355AE-4941-4864-8C6B-696CE2F49547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4A355AE-4941-4864-8C6B-696CE2F49547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4A355AE-4941-4864-8C6B-696CE2F49547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4A355AE-4941-4864-8C6B-696CE2F49547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08572D78-C144-400E-85D6-0EAF1015F627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08572D78-C144-400E-85D6-0EAF1015F627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08572D78-C144-400E-85D6-0EAF1015F627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08572D78-C144-400E-85D6-0EAF1015F627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEF26ACA-12ED-4C66-B088-E734D1C1AF86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF26ACA-12ED-4C66-B088-E734D1C1AF86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF26ACA-12ED-4C66-B088-E734D1C1AF86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEF26ACA-12ED-4C66-B088-E734D1C1AF86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2D8214E-19D4-430F-B0AB-B4D204993131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2D8214E-19D4-430F-B0AB-B4D204993131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2D8214E-19D4-430F-B0AB-B4D204993131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2D8214E-19D4-430F-B0AB-B4D204993131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECE0D577-A370-46D8-8945-D456D07E4935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECE0D577-A370-46D8-8945-D456D07E4935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECE0D577-A370-46D8-8945-D456D07E4935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECE0D577-A370-46D8-8945-D456D07E4935}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EA99EE3-3E9D-42F8-A8C2-6C8FDB9894F9}
+	EndGlobalSection
+EndGlobal

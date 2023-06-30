@@ -1,0 +1,15 @@
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\ASSIGNMENT_5\bin\Debug\net7.0\ASSIGNMENT_5.exe
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\ASSIGNMENT_5\bin\Debug\net7.0\ASSIGNMENT_5.deps.json
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\ASSIGNMENT_5\bin\Debug\net7.0\ASSIGNMENT_5.runtimeconfig.json
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\ASSIGNMENT_5\bin\Debug\net7.0\ASSIGNMENT_5.dll
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\ASSIGNMENT_5\bin\Debug\net7.0\ASSIGNMENT_5.pdb
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\ASSIGNMENT_5\obj\Debug\net7.0\ASSIGNMENT_5.csproj.AssemblyReference.cache
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\ASSIGNMENT_5\obj\Debug\net7.0\ASSIGNMENT_5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\ASSIGNMENT_5\obj\Debug\net7.0\ASSIGNMENT_5.AssemblyInfoInputs.cache
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\ASSIGNMENT_5\obj\Debug\net7.0\ASSIGNMENT_5.AssemblyInfo.cs
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\ASSIGNMENT_5\obj\Debug\net7.0\ASSIGNMENT_5.csproj.CoreCompileInputs.cache
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\ASSIGNMENT_5\obj\Debug\net7.0\ASSIGNMENT_5.dll
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\ASSIGNMENT_5\obj\Debug\net7.0\refint\ASSIGNMENT_5.dll
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\ASSIGNMENT_5\obj\Debug\net7.0\ASSIGNMENT_5.pdb
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\ASSIGNMENT_5\obj\Debug\net7.0\ASSIGNMENT_5.genruntimeconfig.cache
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\ASSIGNMENT_5\obj\Debug\net7.0\ref\ASSIGNMENT_5.dll

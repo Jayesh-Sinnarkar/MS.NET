@@ -1,6 +1,7 @@
-﻿/*1.Declare a dictionary based collection of Employee class objects
-
-
+﻿/*
+ Name: Jayesh Sinnarkar
+ 
+1.Declare a dictionary based collection of Employee class objects
 Accept details for Employees  in a loop. Stop accepting based on user input (yes/no)'
 Display the Employee with highest Salary
 Accept EmpNo to be searched. Display all details for that employee.

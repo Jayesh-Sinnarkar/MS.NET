@@ -200,16 +200,18 @@ namespace ASSIGNMENT_3
 
 
         //OVERRIDEN BASIC SALARY PROPERTY
+
+        private decimal _base;
         public override decimal Basic
         {
             set
             {
                 if (50000 >= value && value > 15000)
-                    Basic = value;
+                    _base = value;
                 else Console.WriteLine("Invalid salary");
 
             }
-            get { return Basic; }
+            get { return _base; }
         }
 
 
@@ -226,7 +228,7 @@ namespace ASSIGNMENT_3
         //CalcNetSalary()
         public override decimal CalcNetSalary()
         {
-            return Basic+25000;
+            return base.Basic+25000;
         }
 
 

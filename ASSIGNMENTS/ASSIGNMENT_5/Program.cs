@@ -20,17 +20,19 @@ namespace ASSIGNMENT_5
     {
         static void Main()
         {
-            bool exit=false;
-            while(!exit)
+            StubbedData.staticAddStubbedData();
+            bool exit = false;
+            while (!exit)
             {
                 try
                 {
                     Console.WriteLine("*****MENU*****\n"
-                                     +"1. Create New Employee Record.\n"
-                                     +"2. Display Employee With Highest Salary.\n"
-                                     +"3. Display List of All Employees.\n"
-                                     +"4. Display Array of All Employees.\n"
-                                     +"0. Exit.");
+                                     + "1. Create New Employee Record.\n"
+                                     + "2. Display Employee With Highest Salary.\n"
+                                     + "3. Display List of All Employees.\n"
+                                     + "4. Display Array of All Employees.\n"
+                                     + "5. Display Details of Nth Employee.\n"
+                                     + "0. Exit.");
                     Console.Write("Enter your choice:");
                     int ch = Convert.ToInt32(Console.ReadLine());
 
@@ -39,14 +41,14 @@ namespace ASSIGNMENT_5
                         case 1://1. Create New Employee Record.
                             Console.Write("Enter No of Employees to register: ");
                             int empCount = Convert.ToInt32(Console.ReadLine());
-                           
-                            for(int i = 0; i<empCount; i++)
+
+                            for (int i = 0; i < empCount; i++)
                             {
-                                Console.WriteLine($"\nEnter Employee {i+1} Details.");
+                                Console.WriteLine($"\nEnter Employee {i + 1} Details.");
                                 Console.Write("Enter Employee Name:");
                                 string name = Console.ReadLine();
                                 Console.Write("Enter Employee Department No:");
-                                short deptNo= Convert.ToInt16(Console.ReadLine());
+                                short deptNo = Convert.ToInt16(Console.ReadLine());
                                 Console.Write("Enter Basic Salary:");
                                 decimal basic = Convert.ToDecimal(Console.ReadLine());
                                 //Calling static function to add emp to record.
@@ -54,19 +56,19 @@ namespace ASSIGNMENT_5
                                 Console.WriteLine();
                             }
                             Employee.DisplayEmpRecord();
-                            break; 
+                            break;
 
                         case 2://2. Display Employee With Highest Salary.
                             Console.WriteLine("Employee With Highest Salary: ");
                             Console.WriteLine(Employee.FindEmpWithHighestSalary());
-                            Console.WriteLine();    
+                            Console.WriteLine();
                             break;
 
                         case 3://3. Display List of All Employees.
                             Console.WriteLine("List of employees: ");
                             List<Employee> empList = Employee.ConvertArrayToList();
                             List<Employee>.Enumerator e = empList.GetEnumerator();
-                            while(e.MoveNext())
+                            while (e.MoveNext())
                             {
                                 Console.WriteLine(e.Current);
                             }
@@ -80,23 +82,33 @@ namespace ASSIGNMENT_5
                                 Console.WriteLine(emp);
                             }
                             break;
+                        case 5://5. Display Details of Nth Employee.
+                            Console.WriteLine("Enter index to find employee:");
+                            int index = Convert.ToInt32(Console.ReadLine());
+                            Employee employee = Employee.getEmpByIndex(index);
+                            Console.WriteLine();
+                            Console.WriteLine($"Employee at {index} index is: ");
+                            Console.WriteLine(employee);
+                            break;
 
                         case 0:
-                                exit = true;
-                                Console.WriteLine("Thank you...");
+                            exit = true;
+                            Console.WriteLine("Thank you...");
                             break;
 
                         default:
                             throw new Exception("Invalid Input.");
-                            
+
                     }
 
-                }catch (Exception ex)
+                }
+                catch (Exception ex)
                 {
                     Console.WriteLine(ex.Message);
                 }
             }
         }
+    }
 
         public class Employee
         {
@@ -227,6 +239,10 @@ namespace ASSIGNMENT_5
                 return empArr.ToList<Employee>();
             }
 
+            public static Employee getEmpByIndex(int index)
+            {
+                return  emps.ElementAtOrDefault(index).Value;                
+            }
 
 
             public override string ToString()
@@ -234,7 +250,23 @@ namespace ASSIGNMENT_5
                 return "Employee [ Name: " + Name + ", EmpId:" + EmpNo + ",  DeptNo: " + DeptNo + ", Basic:" + Basic + " ]";
             }
 
+            
         }
-
+    public class StubbedData
+    {
+        public static void staticAddStubbedData()
+        {
+            Employee.AddEmpToRecord("Jayesh", 101, 200000);
+            Employee.AddEmpToRecord("Divyanshu", 101, 300000);
+            Employee.AddEmpToRecord("Ashish", 103, 150000);
+            Employee.AddEmpToRecord("Harshad", 103, 120000);
+            Employee.AddEmpToRecord("Pranay", 106, 125000);
+            Employee.AddEmpToRecord("Tushar", 106, 175000);
+            Employee.AddEmpToRecord("Vipul", 108, 75000);
+            Employee.AddEmpToRecord("Harshal", 108, 200000);
+            Employee.AddEmpToRecord("Vaibhav", 109, 200000);
+            Employee.AddEmpToRecord("Avanish", 109, 300000);
+        }
     }
+    
 }

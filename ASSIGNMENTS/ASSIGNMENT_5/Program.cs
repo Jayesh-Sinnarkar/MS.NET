@@ -83,7 +83,7 @@ namespace ASSIGNMENT_5
                             }
                             break;
                         case 5://5. Display Details of Nth Employee.
-                            Console.WriteLine("Enter index to find employee:");
+                            Console.Write("Enter index to find employee:");
                             int index = Convert.ToInt32(Console.ReadLine());
                             Employee employee = Employee.getEmpByIndex(index);
                             Console.WriteLine();
@@ -212,20 +212,18 @@ namespace ASSIGNMENT_5
 
             public static Employee? FindEmpWithHighestSalary()
             {
-                Dictionary<int, Employee>.Enumerator e = emps.GetEnumerator();
-
                 decimal highestSal = 0;
                 int empId = 0;
-                while(e.MoveNext())
+            
+            foreach (KeyValuePair<int,Employee> pair in emps)
+            {
+                if (pair.Value.Basic > highestSal)
                 {
-                    if(e.Current.Value.Basic > highestSal)
-                    {
-                        highestSal = e.Current.Value.Basic;
-                        empId = e.Current.Key;
-                    }
+                    empId = pair.Key;
+                    highestSal = pair.Value.Basic;
                 }
-
-                return emps.GetValueOrDefault(empId);
+            }
+             return emps.GetValueOrDefault(empId);
             }
 
             public static Employee[] GetEmploeeArray()

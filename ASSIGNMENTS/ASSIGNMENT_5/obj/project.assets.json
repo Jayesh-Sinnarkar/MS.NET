@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\dac.DACPC\\.nuget\\packages\\": {}
+    "C:\\Users\\jayes\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dac.DACPC\\Documents\\Git\\MS.NET\\ASSIGNMENTS\\ASSIGNMENT_5\\ASSIGNMENT_5.csproj",
+      "projectUniqueName": "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\ASSIGNMENTS\\ASSIGNMENT_5\\ASSIGNMENT_5.csproj",
       "projectName": "ASSIGNMENT_5",
-      "projectPath": "C:\\Users\\dac.DACPC\\Documents\\Git\\MS.NET\\ASSIGNMENTS\\ASSIGNMENT_5\\ASSIGNMENT_5.csproj",
-      "packagesPath": "C:\\Users\\dac.DACPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dac.DACPC\\Documents\\Git\\MS.NET\\ASSIGNMENTS\\ASSIGNMENT_5\\obj\\",
+      "projectPath": "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\ASSIGNMENTS\\ASSIGNMENT_5\\ASSIGNMENT_5.csproj",
+      "packagesPath": "C:\\Users\\jayes\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\ASSIGNMENTS\\ASSIGNMENT_5\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dac.DACPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jayes\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

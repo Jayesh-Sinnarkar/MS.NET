@@ -1,0 +1,8 @@
+D:\Trainings\ActsJune23\Day6\AsyncCodeWithDelegatesExample\bin\Debug\AsyncCodeWithDelegatesExample.exe.config
+D:\Trainings\ActsJune23\Day6\AsyncCodeWithDelegatesExample\bin\Debug\AsyncCodeWithDelegatesExample.exe
+D:\Trainings\ActsJune23\Day6\AsyncCodeWithDelegatesExample\bin\Debug\AsyncCodeWithDelegatesExample.pdb
+D:\Trainings\ActsJune23\Day6\AsyncCodeWithDelegatesExample\obj\Debug\AsyncCodeWithDelegatesExample.csproj.AssemblyReference.cache
+D:\Trainings\ActsJune23\Day6\AsyncCodeWithDelegatesExample\obj\Debug\AsyncCodeWithDelegatesExample.csproj.SuggestedBindingRedirects.cache
+D:\Trainings\ActsJune23\Day6\AsyncCodeWithDelegatesExample\obj\Debug\AsyncCodeWithDelegatesExample.csproj.CoreCompileInputs.cache
+D:\Trainings\ActsJune23\Day6\AsyncCodeWithDelegatesExample\obj\Debug\AsyncCodeWithDelegatesExample.exe
+D:\Trainings\ActsJune23\Day6\AsyncCodeWithDelegatesExample\obj\Debug\AsyncCodeWithDelegatesExample.pdb

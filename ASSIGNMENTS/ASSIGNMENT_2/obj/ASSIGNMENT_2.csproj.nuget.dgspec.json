@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dac.DACPC\\Documents\\Git\\MS.NET\\ASSIGNMENTS\\ASSIGNMENT_2\\ASSIGNMENT_2.csproj": {}
+    "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\ASSIGNMENTS\\ASSIGNMENT_2\\ASSIGNMENT_2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dac.DACPC\\Documents\\Git\\MS.NET\\ASSIGNMENTS\\ASSIGNMENT_2\\ASSIGNMENT_2.csproj": {
+    "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\ASSIGNMENTS\\ASSIGNMENT_2\\ASSIGNMENT_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dac.DACPC\\Documents\\Git\\MS.NET\\ASSIGNMENTS\\ASSIGNMENT_2\\ASSIGNMENT_2.csproj",
+        "projectUniqueName": "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\ASSIGNMENTS\\ASSIGNMENT_2\\ASSIGNMENT_2.csproj",
         "projectName": "ASSIGNMENT_2",
-        "projectPath": "C:\\Users\\dac.DACPC\\Documents\\Git\\MS.NET\\ASSIGNMENTS\\ASSIGNMENT_2\\ASSIGNMENT_2.csproj",
-        "packagesPath": "C:\\Users\\dac.DACPC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dac.DACPC\\Documents\\Git\\MS.NET\\ASSIGNMENTS\\ASSIGNMENT_2\\obj\\",
+        "projectPath": "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\ASSIGNMENTS\\ASSIGNMENT_2\\ASSIGNMENT_2.csproj",
+        "packagesPath": "C:\\Users\\jayes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\ASSIGNMENTS\\ASSIGNMENT_2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\dac.DACPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jayes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

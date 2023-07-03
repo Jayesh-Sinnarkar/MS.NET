@@ -1,0 +1,15 @@
+D:\Trainings\ActsJune23\Day6\WorkingWithTasks\bin\Debug\net7.0\WorkingWithTasks.exe
+D:\Trainings\ActsJune23\Day6\WorkingWithTasks\bin\Debug\net7.0\WorkingWithTasks.deps.json
+D:\Trainings\ActsJune23\Day6\WorkingWithTasks\bin\Debug\net7.0\WorkingWithTasks.runtimeconfig.json
+D:\Trainings\ActsJune23\Day6\WorkingWithTasks\bin\Debug\net7.0\WorkingWithTasks.dll
+D:\Trainings\ActsJune23\Day6\WorkingWithTasks\bin\Debug\net7.0\WorkingWithTasks.pdb
+D:\Trainings\ActsJune23\Day6\WorkingWithTasks\obj\Debug\net7.0\WorkingWithTasks.csproj.AssemblyReference.cache
+D:\Trainings\ActsJune23\Day6\WorkingWithTasks\obj\Debug\net7.0\WorkingWithTasks.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trainings\ActsJune23\Day6\WorkingWithTasks\obj\Debug\net7.0\WorkingWithTasks.AssemblyInfoInputs.cache
+D:\Trainings\ActsJune23\Day6\WorkingWithTasks\obj\Debug\net7.0\WorkingWithTasks.AssemblyInfo.cs
+D:\Trainings\ActsJune23\Day6\WorkingWithTasks\obj\Debug\net7.0\WorkingWithTasks.csproj.CoreCompileInputs.cache
+D:\Trainings\ActsJune23\Day6\WorkingWithTasks\obj\Debug\net7.0\WorkingWithTasks.dll
+D:\Trainings\ActsJune23\Day6\WorkingWithTasks\obj\Debug\net7.0\refint\WorkingWithTasks.dll
+D:\Trainings\ActsJune23\Day6\WorkingWithTasks\obj\Debug\net7.0\WorkingWithTasks.pdb
+D:\Trainings\ActsJune23\Day6\WorkingWithTasks\obj\Debug\net7.0\WorkingWithTasks.genruntimeconfig.cache
+D:\Trainings\ActsJune23\Day6\WorkingWithTasks\obj\Debug\net7.0\ref\WorkingWithTasks.dll

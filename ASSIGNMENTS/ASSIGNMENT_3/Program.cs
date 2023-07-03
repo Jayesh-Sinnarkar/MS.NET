@@ -89,11 +89,7 @@ namespace ASSIGNMENT_3
         private int empNo = 0;
         public int EmpNo
         {
-            set
-            {
-                if (value > 0)
-                    empNo = value;
-            }
+            private set { empNo = value; } 
             get { return empNo; }
         }
 
@@ -101,7 +97,7 @@ namespace ASSIGNMENT_3
 
 
         //ABSTRACT BASIC SALARY
-        public abstract decimal Basic { set; get; }
+        protected abstract decimal Basic { set; get; }
         
 
         //DEPARTMENT NO
@@ -140,24 +136,24 @@ namespace ASSIGNMENT_3
     }
     class Manager : Employee, IDBFunctions
     {
-        private decimal basic;
+        private decimal mbasic;
         //OVERRIDEN BASIC SALARY PROPERTY
-        public override decimal Basic
+        protected override decimal Basic
         {
             set
             {
                 if (80000 >= value && value > 30000)
-                    basic = value;
+                    mbasic = value;
                 else Console.WriteLine("Invalid salary - Manager");
             }
-            get { return basic; }
+            get { return mbasic; }
         }
 
         //CALLING SUPER CLASS CTOR
-        public Manager(String Designation="", string name = "", short deptNo = 0, decimal basic = 0) : base(name,deptNo,basic)
+        public Manager(String Designation="", string name = "", short deptNo = 0, decimal mbasic = 0) : base(name,deptNo,mbasic)
         {
             this.Designation = Designation;
-            this.Basic= basic;
+            this.Basic= mbasic;
         }
 
 
@@ -179,7 +175,7 @@ namespace ASSIGNMENT_3
         public override decimal CalcNetSalary()
         {
             Console.Write("\nManager Salary: ");
-            return 12 + 50000;
+            return Basic * 12 + 50000;
         }
 
         //IDBFunction Interface Methods
@@ -214,21 +210,21 @@ namespace ASSIGNMENT_3
 
 
 
-        private decimal basic;
+        
         //OVERRIDEN BASIC SALARY PROPERTY
 
-        private decimal _base;
-        public override decimal Basic
+        private decimal gbase;
+        protected override decimal Basic
         {
             set
             {
                 if (50000 >= value && value > 15000)
 
-                    _base = value;
+                    gbase = value;
                 else Console.WriteLine("Invalid salary");
 
             }
-            get { return _base; }
+            get { return gbase; }
 
    
         }
@@ -236,7 +232,7 @@ namespace ASSIGNMENT_3
 
 
         //CALLING SUPER CLASS CTOR
-        public GeneralManager(string perks = "", string designation="", string name = "", short deptNo = 0, decimal basic = 0) : base(designation, name,deptNo,basic)
+        public GeneralManager(string perks = "", string designation="", string name = "", short deptNo = 0, decimal gbasic = 0) : base(designation, name,deptNo,gbasic)
         {
             this.Perks = perks;
         }
@@ -248,7 +244,7 @@ namespace ASSIGNMENT_3
         public override decimal CalcNetSalary()
         {
 
-            return base.Basic+25000;
+            return Basic+25000;
 
         }
 
@@ -264,18 +260,18 @@ namespace ASSIGNMENT_3
     {
 
         //OVERRIDEN BASIC SALARY PROPERTY
-        private decimal basic;
-        public override decimal Basic
+        private decimal cbasic;
+        protected override decimal Basic
         {
             set
             {
                 if (150000 >= value && value > 15000)
                 {
-                    basic = value;
+                    cbasic = value;
                 }
                 else Console.WriteLine("Invalid Basic Salary - CEO");
             }
-            get { return basic; }
+            get { return cbasic; }
         }
 
 
@@ -283,9 +279,9 @@ namespace ASSIGNMENT_3
 
 
         //CALLING SUPER CLASS CTOR
-        public CEO( string name = "", short deptNo = 0, decimal basic = 0) : base(name, deptNo, basic)
+        public CEO( string name = "", short deptNo = 0, decimal cbasic = 0) : base(name, deptNo, cbasic)
         {
-            this.Basic = basic;
+            this.Basic = cbasic;
         }
 
 

@@ -37,8 +37,7 @@
 
 namespace ASSIGNMENT_2
 {
-
-    internal class Employee
+    public class Program
     {
         static void Main()
         {
@@ -49,6 +48,8 @@ namespace ASSIGNMENT_2
 
             Console.WriteLine(employee1);
             Console.WriteLine(employee2);
+            Console.WriteLine(employee3);
+            Console.WriteLine(employee4);
 
             Employee o1 = new Employee();
             Employee o2 = new Employee();
@@ -63,6 +64,11 @@ namespace ASSIGNMENT_2
             Console.WriteLine(o1.EmpNo);
 
         }
+    }
+
+    internal class Employee
+    {
+        
 
         private string? name;
         public string? Name
@@ -119,7 +125,7 @@ namespace ASSIGNMENT_2
 
 
 
-        public Employee(string Name = "Aditya", short DeptNo = 102, decimal Basic = 50000)
+        public Employee(string Name="Aditya", short DeptNo = 102, decimal Basic = 50000)
         {
             this.Name = Name;
             this.DeptNo = DeptNo;

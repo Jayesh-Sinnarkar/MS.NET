@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Trainings\\ActsJune23\\Day6\\ThreadingExamples\\ThreadingExamples.csproj": {}
+    "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\Day Wise Data\\Day6\\Day6\\ThreadingExamples\\ThreadingExamples.csproj": {}
   },
   "projects": {
-    "D:\\Trainings\\ActsJune23\\Day6\\ThreadingExamples\\ThreadingExamples.csproj": {
+    "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\Day Wise Data\\Day6\\Day6\\ThreadingExamples\\ThreadingExamples.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Trainings\\ActsJune23\\Day6\\ThreadingExamples\\ThreadingExamples.csproj",
+        "projectUniqueName": "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\Day Wise Data\\Day6\\Day6\\ThreadingExamples\\ThreadingExamples.csproj",
         "projectName": "ThreadingExamples",
-        "projectPath": "D:\\Trainings\\ActsJune23\\Day6\\ThreadingExamples\\ThreadingExamples.csproj",
-        "packagesPath": "C:\\Users\\vikra\\.nuget\\packages\\",
-        "outputPath": "D:\\Trainings\\ActsJune23\\Day6\\ThreadingExamples\\obj\\",
+        "projectPath": "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\Day Wise Data\\Day6\\Day6\\ThreadingExamples\\ThreadingExamples.csproj",
+        "packagesPath": "C:\\Users\\jayes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\Day Wise Data\\Day6\\Day6\\ThreadingExamples\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\vikra\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\jayes\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

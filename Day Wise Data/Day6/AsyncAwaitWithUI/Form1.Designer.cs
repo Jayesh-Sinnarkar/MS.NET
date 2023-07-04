@@ -46,7 +46,7 @@ namespace AsyncAwaitWithUI
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(218, 178);
+            this.button2.Location = new System.Drawing.Point(32, 88);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(128, 43);
             this.button2.TabIndex = 1;
@@ -59,7 +59,7 @@ namespace AsyncAwaitWithUI
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(490, 112);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.Size = new System.Drawing.Size(44, 16);
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
             // 

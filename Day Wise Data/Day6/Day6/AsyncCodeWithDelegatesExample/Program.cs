@@ -28,7 +28,7 @@ namespace AsyncCodeWithDelegatesExample1
 namespace AsyncCodeWithDelegatesExample2
 {
     internal class Program
-    {
+    {   
         static void Main2()
         {
             Action<string> oDel = Display;

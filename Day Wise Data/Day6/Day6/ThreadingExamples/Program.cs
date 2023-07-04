@@ -5,9 +5,10 @@
         static void Main1()
         {
             Thread t1 = new Thread(new ThreadStart(Func1));
-            Thread t2 = new Thread(Func2);
+            Thread t2 = new(Func2);
             t1.Start();
             t2.Start();
+
             for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Main : " + i);
@@ -71,7 +72,7 @@
             //if(t1.ThreadState == ThreadState.)
 
             t1.Start();
-           
+
             t2.Start();
 
 
@@ -80,7 +81,7 @@
                 Console.WriteLine("Main : " + i);
                 Thread.Sleep(1000);
 
-                //if(i == 100) t1.Abort();
+                //if(i == 5) t1.Abort();
             }
             //t1.Suspend();
             //t1.Resume();
@@ -99,7 +100,7 @@
 
         static void Main6()
         {
-            AutoResetEvent wh = new AutoResetEvent(false);
+            AutoResetEvent wh = new AutoResetEvent(false); //wait handler
             Thread t1 = new Thread(delegate ()
             {
                 for (int i = 0; i < 200; i++)
@@ -148,40 +149,52 @@ namespace ThreadingExamples2
 {
     internal class Program
     {
-        static void Main2()
+        static void Main1()
         {
-            Thread t1 = new Thread(new ParameterizedThreadStart(Func1));
+            //Thread t3 = new Thread(new ParameterizedThreadStart(Func1));
+            //int x = 10;
+            string i = "data";
+            Thread t1 = new Thread((x)=> {
+                for (int k = 0; k < 10; k++)
+                {
+                    Console.WriteLine("First : " + i + " " + x);
+                    Thread.Sleep(1000);
+                }
+            });
+            
             Thread t2 = new Thread(Func2);
             //t1.Start("data");
-            //t1.Start(10);
-            //t1.Start(true);
+            t1.Start(10);
+            t2.Start(true);
 
             //t2.Start();
-            for (int i = 0; i < 10; i++)
+            for (int j = 0; j < 10; j++)
             {
-                Console.WriteLine("Main : " + i);
+                Console.WriteLine("Main : " + j);
             }
         }
 
         // TO DO - Pass multiple values to the function
-        static void Func1(object o)
+        static void Func1(object o, int x)
         {
             //Class1 obj = (Class1)o;
 
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine("First : " + i + o);
+                Console.WriteLine("First : " + i +" "+ o+" "+x);
+                Thread.Sleep(1000);
             }
 
         }
 
-      
+
         static void Func2(object o)
         {
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine("Second : " + i);
-
+                o = !(bool)o;
+                Console.WriteLine("Second : " + o);
+                Thread.Sleep(1000);
             }
 
         }
@@ -197,7 +210,7 @@ namespace ThreadingExamples3
         {
             for (int i = 0; i < 100; i++)
             {
-                Console.WriteLine("First Thread " + i.ToString() + o.ToString());
+                Console.WriteLine("First Thread " + i.ToString() +" "+ o.ToString());
             }
         }
         static void PoolFunc2(object o)
@@ -211,9 +224,9 @@ namespace ThreadingExamples3
         {
 
             //ThreadPool.QueueUserWorkItem(new WaitCallback(PoolFunc1), "aaa");
-            //ThreadPool.QueueUserWorkItem(PoolFunc1, "aaa");
+            ThreadPool.QueueUserWorkItem(PoolFunc1, "aaa");
             //ThreadPool.QueueUserWorkItem(new WaitCallback(PoolFunc2));
-            //ThreadPool.QueueUserWorkItem(PoolFunc2);
+            ThreadPool.QueueUserWorkItem(PoolFunc2);
             for (int i = 0; i < 100; i++)
             {
                 Console.WriteLine("Main Thread " + i.ToString());
@@ -246,11 +259,11 @@ namespace ThreadingExamples4
             Thread t3 = new Thread(new ThreadStart(FuncInterlocked));
             t1.Start();
             t2.Start();
-            //t3.Start();
+            t3.Start();
 
-            //t1.Join();
-            //t2.Join();
-            //t3.Join();
+            t1.Join();
+            t2.Join();
+            t3.Join();
 
             Console.WriteLine("Finished Main");
             Console.ReadLine();
@@ -367,6 +380,7 @@ namespace ThreadingExamples4
                 i++;
                 Console.WriteLine("First FuncLock " + i);
             }
+            
         }
 
         static void FuncMonitor()

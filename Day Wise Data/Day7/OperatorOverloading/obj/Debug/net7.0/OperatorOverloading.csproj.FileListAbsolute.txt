@@ -1,0 +1,15 @@
+D:\Trainings\ActsJune23\Day7\OperatorOverloading\bin\Debug\net7.0\OperatorOverloading.exe
+D:\Trainings\ActsJune23\Day7\OperatorOverloading\bin\Debug\net7.0\OperatorOverloading.deps.json
+D:\Trainings\ActsJune23\Day7\OperatorOverloading\bin\Debug\net7.0\OperatorOverloading.runtimeconfig.json
+D:\Trainings\ActsJune23\Day7\OperatorOverloading\bin\Debug\net7.0\OperatorOverloading.dll
+D:\Trainings\ActsJune23\Day7\OperatorOverloading\bin\Debug\net7.0\OperatorOverloading.pdb
+D:\Trainings\ActsJune23\Day7\OperatorOverloading\obj\Debug\net7.0\OperatorOverloading.csproj.AssemblyReference.cache
+D:\Trainings\ActsJune23\Day7\OperatorOverloading\obj\Debug\net7.0\OperatorOverloading.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trainings\ActsJune23\Day7\OperatorOverloading\obj\Debug\net7.0\OperatorOverloading.AssemblyInfoInputs.cache
+D:\Trainings\ActsJune23\Day7\OperatorOverloading\obj\Debug\net7.0\OperatorOverloading.AssemblyInfo.cs
+D:\Trainings\ActsJune23\Day7\OperatorOverloading\obj\Debug\net7.0\OperatorOverloading.csproj.CoreCompileInputs.cache
+D:\Trainings\ActsJune23\Day7\OperatorOverloading\obj\Debug\net7.0\OperatorOverloading.dll
+D:\Trainings\ActsJune23\Day7\OperatorOverloading\obj\Debug\net7.0\refint\OperatorOverloading.dll
+D:\Trainings\ActsJune23\Day7\OperatorOverloading\obj\Debug\net7.0\OperatorOverloading.pdb
+D:\Trainings\ActsJune23\Day7\OperatorOverloading\obj\Debug\net7.0\OperatorOverloading.genruntimeconfig.cache
+D:\Trainings\ActsJune23\Day7\OperatorOverloading\obj\Debug\net7.0\ref\OperatorOverloading.dll

@@ -1,0 +1,15 @@
+D:\Trainings\ActsJune23\Day7\ReflectionExample\bin\Debug\net7.0\ReflectionExample.exe
+D:\Trainings\ActsJune23\Day7\ReflectionExample\bin\Debug\net7.0\ReflectionExample.deps.json
+D:\Trainings\ActsJune23\Day7\ReflectionExample\bin\Debug\net7.0\ReflectionExample.runtimeconfig.json
+D:\Trainings\ActsJune23\Day7\ReflectionExample\bin\Debug\net7.0\ReflectionExample.dll
+D:\Trainings\ActsJune23\Day7\ReflectionExample\bin\Debug\net7.0\ReflectionExample.pdb
+D:\Trainings\ActsJune23\Day7\ReflectionExample\obj\Debug\net7.0\ReflectionExample.csproj.AssemblyReference.cache
+D:\Trainings\ActsJune23\Day7\ReflectionExample\obj\Debug\net7.0\ReflectionExample.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trainings\ActsJune23\Day7\ReflectionExample\obj\Debug\net7.0\ReflectionExample.AssemblyInfoInputs.cache
+D:\Trainings\ActsJune23\Day7\ReflectionExample\obj\Debug\net7.0\ReflectionExample.AssemblyInfo.cs
+D:\Trainings\ActsJune23\Day7\ReflectionExample\obj\Debug\net7.0\ReflectionExample.csproj.CoreCompileInputs.cache
+D:\Trainings\ActsJune23\Day7\ReflectionExample\obj\Debug\net7.0\ReflectionExample.dll
+D:\Trainings\ActsJune23\Day7\ReflectionExample\obj\Debug\net7.0\refint\ReflectionExample.dll
+D:\Trainings\ActsJune23\Day7\ReflectionExample\obj\Debug\net7.0\ReflectionExample.pdb
+D:\Trainings\ActsJune23\Day7\ReflectionExample\obj\Debug\net7.0\ReflectionExample.genruntimeconfig.cache
+D:\Trainings\ActsJune23\Day7\ReflectionExample\obj\Debug\net7.0\ref\ReflectionExample.dll

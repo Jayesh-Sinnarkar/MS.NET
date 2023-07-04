@@ -1,0 +1,17 @@
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\bin\Debug\net7.0\SerializationWithCore.exe
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\bin\Debug\net7.0\SerializationWithCore.deps.json
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\bin\Debug\net7.0\SerializationWithCore.runtimeconfig.json
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\bin\Debug\net7.0\SerializationWithCore.dll
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\bin\Debug\net7.0\SerializationWithCore.pdb
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\obj\Debug\net7.0\SerializationWithCore.csproj.AssemblyReference.cache
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\obj\Debug\net7.0\SerializationWithCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\obj\Debug\net7.0\SerializationWithCore.AssemblyInfoInputs.cache
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\obj\Debug\net7.0\SerializationWithCore.AssemblyInfo.cs
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\obj\Debug\net7.0\SerializationWithCore.csproj.CoreCompileInputs.cache
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\obj\Debug\net7.0\SerializationWithCore.dll
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\obj\Debug\net7.0\refint\SerializationWithCore.dll
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\obj\Debug\net7.0\SerializationWithCore.pdb
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\obj\Debug\net7.0\SerializationWithCore.genruntimeconfig.cache
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\obj\Debug\net7.0\ref\SerializationWithCore.dll
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\bin\Debug\net7.0\SoapFormatter.dll
+D:\Trainings\ActsJune23\Day7\SerializationWithCore\obj\Debug\net7.0\SerializationWithCore.csproj.CopyComplete

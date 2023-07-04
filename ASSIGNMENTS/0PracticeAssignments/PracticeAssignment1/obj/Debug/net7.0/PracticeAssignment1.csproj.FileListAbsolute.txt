@@ -1,0 +1,15 @@
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\0PracticeAssignments\PracticeAssignment1\bin\Debug\net7.0\PracticeAssignment1.exe
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\0PracticeAssignments\PracticeAssignment1\bin\Debug\net7.0\PracticeAssignment1.deps.json
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\0PracticeAssignments\PracticeAssignment1\bin\Debug\net7.0\PracticeAssignment1.runtimeconfig.json
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\0PracticeAssignments\PracticeAssignment1\bin\Debug\net7.0\PracticeAssignment1.dll
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\0PracticeAssignments\PracticeAssignment1\bin\Debug\net7.0\PracticeAssignment1.pdb
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\0PracticeAssignments\PracticeAssignment1\obj\Debug\net7.0\PracticeAssignment1.csproj.AssemblyReference.cache
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\0PracticeAssignments\PracticeAssignment1\obj\Debug\net7.0\PracticeAssignment1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\0PracticeAssignments\PracticeAssignment1\obj\Debug\net7.0\PracticeAssignment1.AssemblyInfoInputs.cache
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\0PracticeAssignments\PracticeAssignment1\obj\Debug\net7.0\PracticeAssignment1.AssemblyInfo.cs
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\0PracticeAssignments\PracticeAssignment1\obj\Debug\net7.0\PracticeAssignment1.csproj.CoreCompileInputs.cache
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\0PracticeAssignments\PracticeAssignment1\obj\Debug\net7.0\PracticeAssignment1.dll
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\0PracticeAssignments\PracticeAssignment1\obj\Debug\net7.0\refint\PracticeAssignment1.dll
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\0PracticeAssignments\PracticeAssignment1\obj\Debug\net7.0\PracticeAssignment1.pdb
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\0PracticeAssignments\PracticeAssignment1\obj\Debug\net7.0\PracticeAssignment1.genruntimeconfig.cache
+C:\Users\dac.DACPC\Documents\Git\MS.NET\ASSIGNMENTS\0PracticeAssignments\PracticeAssignment1\obj\Debug\net7.0\ref\PracticeAssignment1.dll

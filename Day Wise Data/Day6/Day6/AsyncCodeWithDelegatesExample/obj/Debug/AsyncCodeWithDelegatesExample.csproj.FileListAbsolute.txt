@@ -6,3 +6,11 @@ D:\Trainings\ActsJune23\Day6\AsyncCodeWithDelegatesExample\obj\Debug\AsyncCodeWi
 D:\Trainings\ActsJune23\Day6\AsyncCodeWithDelegatesExample\obj\Debug\AsyncCodeWithDelegatesExample.csproj.CoreCompileInputs.cache
 D:\Trainings\ActsJune23\Day6\AsyncCodeWithDelegatesExample\obj\Debug\AsyncCodeWithDelegatesExample.exe
 D:\Trainings\ActsJune23\Day6\AsyncCodeWithDelegatesExample\obj\Debug\AsyncCodeWithDelegatesExample.pdb
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day6\Day6\AsyncCodeWithDelegatesExample\bin\Debug\AsyncCodeWithDelegatesExample.exe.config
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day6\Day6\AsyncCodeWithDelegatesExample\bin\Debug\AsyncCodeWithDelegatesExample.exe
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day6\Day6\AsyncCodeWithDelegatesExample\bin\Debug\AsyncCodeWithDelegatesExample.pdb
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day6\Day6\AsyncCodeWithDelegatesExample\obj\Debug\AsyncCodeWithDelegatesExample.csproj.AssemblyReference.cache
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day6\Day6\AsyncCodeWithDelegatesExample\obj\Debug\AsyncCodeWithDelegatesExample.csproj.SuggestedBindingRedirects.cache
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day6\Day6\AsyncCodeWithDelegatesExample\obj\Debug\AsyncCodeWithDelegatesExample.csproj.CoreCompileInputs.cache
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day6\Day6\AsyncCodeWithDelegatesExample\obj\Debug\AsyncCodeWithDelegatesExample.exe
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day6\Day6\AsyncCodeWithDelegatesExample\obj\Debug\AsyncCodeWithDelegatesExample.pdb

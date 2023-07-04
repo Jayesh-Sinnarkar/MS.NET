@@ -5,7 +5,7 @@
         static void Main1()
         {
             Thread t1 = new Thread(new ThreadStart(Func1));
-            Thread t2 = new(Func2);
+            Thread t2 = new Thread(Func2);
             t1.Start();
             t2.Start();
 
@@ -88,29 +88,22 @@
             //t1.Join();  //waiting call
             //Console.WriteLine("code that should run ONLY after first thread is over");
         }
-        static void Func1()
-        {
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine("First : " + i);
-                Thread.Sleep(1000);
-            }
+      
 
-        }
-
-        static void Main6()
+        static void Main()
         {
             AutoResetEvent wh = new AutoResetEvent(false); //wait handler
             Thread t1 = new Thread(delegate ()
             {
                 for (int i = 0; i < 200; i++)
                 {
-                    Console.WriteLine("f1:" + i);
+                    Console.WriteLine("f1: " + i);
                     if (i % 50 == 0)
                     {
                         //instead of Suspend, use this
                         Console.WriteLine("waiting");
                         wh.WaitOne();
+                       
                     }
                 }
             });
@@ -131,6 +124,15 @@
             Thread.Sleep(5000);
             Console.WriteLine("resuming 4....");
             wh.Set();
+        }
+        static void Func1()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("First : " + i);
+                Thread.Sleep(1000);
+            }
+
         }
         static void Func2()
         {
@@ -252,7 +254,7 @@ namespace ThreadingExamples4
     {
         static object lockObject = new object();
         static int i = 0;
-        static void Main()
+        static void Main123()
         {
             Thread t1 = new Thread(new ThreadStart(FuncLock));
             Thread t2 = new Thread(new ThreadStart(FuncMonitor));

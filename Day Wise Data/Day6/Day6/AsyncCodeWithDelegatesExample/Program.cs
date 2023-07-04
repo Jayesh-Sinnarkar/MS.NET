@@ -9,7 +9,7 @@ namespace AsyncCodeWithDelegatesExample1
 {
     internal class Program
     {
-        static void Main1()
+        static void Main2()
         {
             Action oDel = Display;
             Console.WriteLine( "before" );
@@ -29,7 +29,7 @@ namespace AsyncCodeWithDelegatesExample2
 {
     internal class Program
     {   
-        static void Main2()
+        static void Main3()
         {
             Action<string> oDel = Display;
             Console.WriteLine("before");
@@ -49,7 +49,7 @@ namespace AsyncCodeWithDelegatesExample3
 {
     internal class Program
     {
-        static void Main3()
+        static void Main2()
         {
             Func<string,string> oDel = Display;
             Console.WriteLine("before");
@@ -66,7 +66,7 @@ namespace AsyncCodeWithDelegatesExample3
         static string Display(string s)
         {
             Thread.Sleep(3000);
-            Console.WriteLine("display called" + s);
+            Console.WriteLine("display called " + s);
             return s.ToUpper();
         }
     }
@@ -76,7 +76,7 @@ namespace AsyncCodeWithDelegatesExample4
 {
     internal class Program
     {
-        static void Main1()
+        static void Main3()
         {
             Func<string, string> oDel = Display;
             Console.WriteLine("before");
@@ -113,11 +113,12 @@ namespace AsyncCodeWithDelegatesExample5
             //oDel.BeginInvoke("passed string", new AsyncCallback(CallbackFunction), null);
             IAsyncResult ar = oDel.BeginInvoke("passed string", null, null);
 
-            Console.WriteLine("after");
+            
 
             while (!ar.IsCompleted) ;
             string retval = oDel.EndInvoke(ar);
             Console.WriteLine(retval);
+            Console.WriteLine("after");
             Console.ReadLine();
         }
 

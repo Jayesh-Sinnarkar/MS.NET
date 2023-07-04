@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Krn599MujBuTzWV6UN//HsvMqKpeQMnadzqv/foL3qK98kI+SP255f645wFM3O/C8V4p9YsWg5DB1JI/es4VUw==",
+  "dgSpecHash": "3otkC4WhoXDXf4BL/E0BSuAN9KDxyDYGPgVSaW5riaCK/4+K6xAT7jfIdWCVrl0kJ0+N/paq9fNnkfCyoWnxig==",
   "success": true,
-  "projectFilePath": "D:\\Trainings\\ActsJune23\\Day7\\SerializationWithCore\\SerializationWithCore.csproj",
+  "projectFilePath": "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\Day Wise Data\\Day7\\SerializationWithCore\\SerializationWithCore.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vikra\\.nuget\\packages\\soapformatter\\1.1.9\\soapformatter.1.1.9.nupkg.sha512"
+    "C:\\Users\\jayes\\.nuget\\packages\\soapformatter\\1.1.9\\soapformatter.1.1.9.nupkg.sha512"
   ],
   "logs": []
 }

@@ -37,10 +37,12 @@ namespace PracticeAssignment1
             }
         }
 
+
         //COMPANY COLLECTION
-        protected static List<Company> companyList = new List<Company>();
+        public static List<Company> companyList = new List<Company>();
         //EMPLOYEE COLLECTION
-        protected List<Employee> employeeList = new List<Employee>();
+        public List<Employee> employeeList = new List<Employee>();
+
 
         //CONSTRUCTORS
         public Company(string name)
@@ -48,6 +50,13 @@ namespace PracticeAssignment1
             CompanyName = name;
             companyCount++;
             CompanyId = companyCount;
+        }
+
+        //METHODS
+        public void HandleLeaveNotification(object sender, EventArgs e)
+        {
+            Employee employee = (Employee)sender;
+            Console.WriteLine($"Employee {employee.Name} with ID {employee.EmpId} is on leave.");
         }
     }
 }

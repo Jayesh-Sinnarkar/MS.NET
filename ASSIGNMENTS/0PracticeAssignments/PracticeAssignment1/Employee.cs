@@ -51,6 +51,10 @@ namespace PracticeAssignment1
             }
         }
 
+        //EMPLOYEE LEAVE STATUS
+        private bool leaveStatus; 
+        public bool LeaveStatus { set; get;}
+
         //CONSTRUCTORS
         public Employee(String name = "", String city = "")
         {
@@ -58,12 +62,24 @@ namespace PracticeAssignment1
             EmpId = EmpCount;
             Name = name;
             City = city;
+            LeaveStatus = false;
+        }
+
+        //EVENT
+        public event EventHandler OnLeave;
+
+        //METHODS
+        public void GoOnLeave()
+        {
+            LeaveStatus = true;
+            OnLeave(this, EventArgs.Empty);
+            Console.WriteLine($"Employee {this.Name} is on leave.");
         }
 
         //OVERLOADED ToString
         public override string ToString()
         {
-            return "Employee [ EmpID: "+EmpId+", Name: "+Name+", City: "+city+" ]";
+            return "Employee [ EmpID: "+EmpId+", Name: "+Name+", City: "+city+" Is on Leave: "+leaveStatus+" ]";
         }
     }
 

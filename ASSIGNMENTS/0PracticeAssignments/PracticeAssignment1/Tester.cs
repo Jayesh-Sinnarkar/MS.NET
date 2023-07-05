@@ -25,16 +25,19 @@ namespace PracticeAssignment1
                             Console.Write("Enter Company Name to Register:");
                             String compName = Console.ReadLine();
                             CompanyUtils.RegisterCompany(compName);
+                            Console.WriteLine();
                             break;
 
                         case 2://2. Select Registered Company
                             Console.Write("Enter Company Name: ");
-                            Tester.SubMenu(Console.ReadLine());                          
+                            Tester.SubMenu(Console.ReadLine());
+                            Console.WriteLine();
                             break;
 
                         case 3://3. De-register Company
                             Console.Write("Enter Company Name to De-register:");
                             CompanyUtils.DeRegisterCompany(Console.ReadLine());
+                            Console.WriteLine();
                             break;
                         case 0:
                             exit = true;
@@ -42,7 +45,7 @@ namespace PracticeAssignment1
                             break;
 
                         default:
-                            throw new Exception("Invalid Input.");
+                            throw new Exception("Invalid Choice....");
 
                     }
 
@@ -55,14 +58,14 @@ namespace PracticeAssignment1
         }
         public static void SubMenu(string cName)
         {
-            CompanyUtils selectedComp =(CompanyUtils)CompanyUtils.SelectCompany(cName);
+            CompanyUtils selectedComp = new CompanyUtils(CompanyUtils.SelectCompany(cName));
             
             bool exitCompany = false;
             while (!exitCompany)
             {
                 try
                 {
-                    Console.WriteLine("               *****SUB-MENU*****\n"
+                    Console.WriteLine("\n               *****SUB-MENU*****\n"
                                      + "               A.Enroll Employee.\n"
                                      + "               B.Register Leave for Employee.\n"
                                      + "               C.Delete Employee Record.\n"
@@ -74,20 +77,27 @@ namespace PracticeAssignment1
                     {
                         case 'A'://1. Enroll Employee.
                             Console.Write("\nEnter Employee Name: ");
-                            string? eName = Console.ReadLine();
-                            Console.Write("\nEnter Employee City: ");
+                            string? eName = Console.ReadLine(); 
+                            Console.Write("Enter Employee City: ");
                             string? eCity = Console.ReadLine();
                             selectedComp.EnrollEmployee(eName, eCity);
+                            Console.WriteLine();
                             break;
 
                         case 'B'://2. Register Leave for Employee.
-
+                            Console.Write("Enter Name of Employee on Leave:");
+                            Employee empOnLeave = selectedComp.RetriveEmployee(Console.ReadLine());
+                            //Console.WriteLine(empOnLeave.Name);
+                            empOnLeave.OnLeave += selectedComp.SelectedComp.HandleLeaveNotification;
+                            empOnLeave.GoOnLeave();
+                            Console.WriteLine();
                             break;
 
                         case 'C'://3. Delete Employee Record.
                             Console.Write("\nEnter Employee Name to Delete: ");
                             string? remEmp = Console.ReadLine();
                             selectedComp.DeleteEmployee(remEmp);
+                            Console.WriteLine();
                             break;
                         case '0':
                             exitCompany = true;
@@ -95,7 +105,7 @@ namespace PracticeAssignment1
                             break;
 
                         default:
-                            throw new Exception("Invalid Input.");
+                            throw new Exception("Invalid Choice...");
 
                     }
 

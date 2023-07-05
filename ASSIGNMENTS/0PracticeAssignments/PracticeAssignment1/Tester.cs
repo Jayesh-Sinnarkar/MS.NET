@@ -19,6 +19,7 @@ namespace PracticeAssignment1
                     Console.Write("Enter your choice:");
                     int ch = Convert.ToInt32(Console.ReadLine());
 
+
                     switch (ch)
                     {
                         case 1://1. Register New Company

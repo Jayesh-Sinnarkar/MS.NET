@@ -88,7 +88,6 @@ namespace PracticeAssignment1
                         case 'B'://2. Register Leave for Employee.
                             Console.Write("Enter Name of Employee on Leave:");
                             Employee empOnLeave = selectedComp.RetriveEmployee(Console.ReadLine());
-                            //Console.WriteLine(empOnLeave.Name);
                             empOnLeave.OnLeave += selectedComp.SelectedComp.HandleLeaveNotification;
                             empOnLeave.GoOnLeave();
                             Console.WriteLine();

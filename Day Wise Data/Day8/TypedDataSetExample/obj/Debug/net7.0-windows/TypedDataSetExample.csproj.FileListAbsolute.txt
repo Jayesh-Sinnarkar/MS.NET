@@ -1,0 +1,7 @@
+D:\Trainings\ActsJune23\Day8\TypedDataSetExample\obj\Debug\net7.0-windows\TypedDataSetExample.csproj.AssemblyReference.cache
+D:\Trainings\ActsJune23\Day8\TypedDataSetExample\obj\Debug\net7.0-windows\TypedDataSetExample.Form1.resources
+D:\Trainings\ActsJune23\Day8\TypedDataSetExample\obj\Debug\net7.0-windows\TypedDataSetExample.csproj.GenerateResource.cache
+D:\Trainings\ActsJune23\Day8\TypedDataSetExample\obj\Debug\net7.0-windows\TypedDataSetExample.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trainings\ActsJune23\Day8\TypedDataSetExample\obj\Debug\net7.0-windows\TypedDataSetExample.AssemblyInfoInputs.cache
+D:\Trainings\ActsJune23\Day8\TypedDataSetExample\obj\Debug\net7.0-windows\TypedDataSetExample.AssemblyInfo.cs
+D:\Trainings\ActsJune23\Day8\TypedDataSetExample\obj\Debug\net7.0-windows\TypedDataSetExample.csproj.CoreCompileInputs.cache

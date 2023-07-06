@@ -1,0 +1,294 @@
+Former ADO - ActiveX Data Objects; ActiveX was subset of Com, were used for creating Com-Component;
+
+ADO .NET - Collective name for all the classes used for connecting to Database and performing operations on it; don't have any full form in the .NET
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+need to install the nugate package for db connection for each project => Microsoft.Data.SqlClient
+.Net Framwork uses System.Data.SqlClient // no need to go through it, used in WinForms examples, has mostly similar code
+
+to get the connection string 
+	right click on the db => properties => connectionString
+	Data source = server name?
+	initialCatalog = database name
+	// mode of authentication - 2; 1. userid and password and 2. windows authentication/ integrated authentication
+	// real world situation => userid and password
+	// development => integrated authetication 
+	User Id = 
+	Password =
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Create stored procedure
+	db => programmability => right click => add stored procedure
+
+benefits of stored procedure
+	already compiled code
+	error free
+	
+don't use string concatination => open to sql injection attacks
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL-CONNECTION
+	SqlConnection cn = new SqlConnection();
+	cn.ConnectionString = @"Data Source=(localdb)\MsSqlLocalDb;Initial Catalog=ActsJune23;Integrated Security=true";
+	cn.Open();
+	cn.Close();
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL-COMMAND
+	- Two methods to create sql command object
+	1. create the command object from the connection
+		SqlCommand cmd = cn.CreateCommand();	
+	
+	2. create an instance of command object, set the connection property to the connection object
+		SqlCommand cmd = new SqlCommand();
+		cmd.Connection = cn;
+
+	- Set the command type property =>
+		CommandType.Text => to use the sql commands in the form of strings
+			- write (set property) the command text
+				cmd.CommandText = "insert into Employees values @EmpId, @Name, @Basic, @DeptNo"; 
+
+		CommandType.StoredProcedure => to use the stored procedure from the database
+			- set the CommandText property to the name of the stored procedure
+				cmd.CommandText = "AddEmployee";
+
+	- Add the parameters to the the command
+		cmd.Parameters.AddWithValue("@EmpId", emp.EmpId);
+		cmd.Parameters.AddWithValue("@Name", emp.Name);
+		cmd.Parameters.AddWithValue("@Basic", emp.Basic);
+		cmd.Parameters.AddWithValue("@DeptNo", emp.DeptNo);
+	
+	- Execute the query
+		1. DML queries are executed using ExecuteNonQuery() of the SqlCommand object
+			cmd.ExecuteNonQuery();
+		2. Queries returning a single result (aggregate methods, selection of one column of single row etc) are executed using ExecuteScalar() of the SqlCommand object
+			- ExecuteScalar returns a single object
+				object obj = cmd.ExecuteScalar();
+			- if a query which returns multiple results is executed using ExecuteScalar, only the entry in first column of the first row would be returned 
+		3. Queries returning multiple results (multiple rows and columns) are executed using the ExecuteReader() method of the SqlCommand object
+			- ExecuteReader() method returns a SqlDataReader object which is used to read the results one by one
+				SqlDataReader dr = cmd.ExecuteReader();
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DATA READER
+
+data reader by default places exclusive lock on the connection, can not be used by any other object
+close the data reader immediately to make it release the exclusive lock on the connection
+
+if want to use multiple data readers on the result set =>
+specify MultipleActiveResultSets=true in the connection string to disable exclusive lock on the connection by the data reader
+
+Returning a data reader
+	problem - can not return a closed data reader; can not return an opened data reader as holds the connection exclusively
+	solution - use CommandBehavior.CloseConnection => closes the connection as soons the data reader is closed;
+	return the data reader with command behavior and close the data reader after use in the code where the data reader instance was returned
+
+	SqlDataReader dr = cmdInsert.ExecuteReader(commandBehavior.CloseConnection);
+	
+	
+
+** get connection as late as possible and release as early as possible in a web app
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+semi-colon seperated query returns multiple set of records;
+
+data reader only goes through the first set of records, to place the datareader in the second set of records use dr.NextResult() => places the dr before the 1st row of the next set of records
+
+use while loops to iterate over the records using the dr.Read() 
+inbetweeen the loops use dr.NextResult() to jump to the next record
+followed by another while loop to process those records
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+TRANSACTION
+
+SqlTransaction object => every command from the declaration of the transaction needs to use the transaction
+if the commands don't use a declared transaction => runtime error
+
+	SqlTransaction t = cn.BeginTransaction();
+	cmdInsert.Transaction = t;
+	cmdInsert2.Transaction =t;
+	try
+	{
+		cmdInsert.ExecuteNonQuery();
+		cmdInsert2.ExecuteNonQuery();
+		t.commit();
+	} catch(Exception ex)
+	{
+		t.RollBack();	// rollback if error encountered
+		cw(ex.Message);
+	}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+=======================================================================================================================================================================
+
+DATA SET/ DATA TABLE (DataSet/DataTable)
+	
+	is a disconnected, updatable, XML set of records
+	disconnected => does not need the connection to be open while working
+	updatable => can make changes to the data while reading through it; change not reflected immediately as disconnected, uses manual bulk/batch updates
+	XML set of records => not specific to a db, records maintained in a consistent XML format
+	- by default supports serialization to the XML format. 
+	- when connection is not available, the changes can be serialized in the XML format in a file and when connection is available data can be deserialized and updated through the connection
+			Method => WriteXml and ReadXml
+				ds.WriteXmlSchema("emps.xsd");	// stores the 
+				ds.WriteXml("emps.xml");
+				ds.WriteXml("emps.xml", XmlWriteMode.<options>);
+					XmlWriteMode.XmlSchema => data + schema(including constraints)
+					XmlWriteMode.<---->	=> only stores data and that too the current value
+					XmlWriteMode.DiffGram => stores data with all the changes made in it (both original and current values)
+				
+				ds.ReadXmlSchema("emps.xsd");
+				ds.ReadXml("emps.xml", XmlReadMode.DiffGram);
+
+	DATA-TABLE
+		has a collection of DataTables which may exist inside or outside the DataSet by itself
+		consists of data columns (DataColumn) and data rows (DataRow)
+		is the output of the query give a datatable
+		- can not filter or sort the record onces the DataTable is created
+		two data tables can have relation between them, known as DataRelation (~foreign key)
+		- every DataTables has array of DataColumns named Columns
+		
+		internally maintains a rowState (U - unchanged/ M - modified) along with the values (Origin Value and Current value)
+		deleted rows are not actually deleted but their RowState is changed to D- deleted
+		newly inserted rows have RowState has state of A - added		
+
+	TYPED AND UNTYPED DATA-TABLES
+		UnTyped DataSet => System.Data.DataSet => does not contain any of the constraints of the underlying table. 
+			Constraint if any are added manually to the DataSet
+			- Primary Key Constraint => every DataTable has it as Primary property which is in the form of array of DataColumn
+				DataColumn[] arr = new DataColumn[1];
+				DataColumn[0] = ds.Tables["Emps"].Columns["EmpNo"];
+				ds.Tables["Emps"].PrimaryKey = arr;
+
+			- Foreign Key Constraint => maintained as a collection of DataColumns with the DataSet
+				ds.Relations.Add(ds.Tables["Depts"].Columns["DeptNo"], ds.Tables["Emps"].Columns["DeptNo"])
+			
+			- Column level constraints
+				ds.Tables["Emps"].Columns["Name"].<list_of_constraints_in_the_IDE>
+
+		Typed DataSet => DataSet with defined constraints => need to be manually defined in the code
+			// not preferred as most of the code generated => less control over what's happening
+			project menu => add item => add data set => name it (say MyTypeDataSet)
+			connect to the server from left side bar
+			drag and drop the tables to have the respective data set
+			- automatically creates the respective TableAdapters
+			- automatically adds the constraints to the DataTables
+
+			+ fill the DataTables (fill the parent DataTables first in the DataSet)
+				// no need to open connection and other code (constraints, naming etc) as auto-generated during drag and drop
+				DepartmentTableAdapter daDepts = new DepartmentTableAdapter();
+				EmployeeTableAdapter daEmps = new EmployeeTableAdapter();
+				MyTypeDataSet ds = new MyTypeDataSet();
+				daDepts.Fill(ds.Departments);
+				daEmps.Fill(ds.Employees);
+
+	DATA-VIEW
+		DataView based on a signle DataTable (can not be formed using the joins etc)
+		One DataTable can have multiple DataView => multiple filtering and/or sorting criteria
+		Any change in the DataView is reflected on the DataTable and vice-versa.
+		Changes made in DataView need to be updated to the database through the SqlDataAdapter
+		- Has the exact same structure as the DataTable
+		- DataView allows filtering and sorting on a DataTable
+
+		// based on a data tables so need to be specified
+		DataView dv = new DataView(ds.Tables["Emps"]);
+		
+		// filtering operations
+		dv.RowFilter = "DeptNo=" + TextBox1.Text;	//TextBox1.Text => user input in the WinForms GUI
+		dataGridView1.DataSource = dv;			//dataGridView1.DataSource => show the output in the WinForms GUI
+		
+		// sorting
+		dv.Sort = "Name";	// sorting the data
+		dataGridView1.DataSource = dv;			//dataGridView1.DataSource => show the output in the WinForms GUI
+
+		Each DataTable has a default DataView => no need to create a seperate DataView Object
+		// applying filering then sorting on default DataView
+		ds.Tables["Emps"].DefaultView.RowFilter = "DeptNo=" + TextBox1.Text;	//TextBox1.Text => user input in the WinForms GUI
+		ds.Tables["Emps"].DefaultView.Sort = "Name";	// sorting the data
+		
+	
+	SQL-DATA-ADAPTER
+		does not talk to the SqlCommand directly rather through SqlDataAdapter
+		SqlDataAdapter => Functions of SqlDataAdapter
+			1. FILL - read through the SqlCommand and fill the DataSet
+			2. UPDATE - read the value from the DataSet and update the database using SqlCommand
+				Command to update the tables from DataSet/DataTable => da.Update(<DataSet_name>, <DataTable_name>);
+	
+				// specifying user defined Delete, Insert, Update commands
+				// example - only writing udpate command here
+				cmdUpdate.Text = "update Employees set Name = @Name, Basic = @Basic, DeptNo = @DeptNo where EmpNo = @EmpNo";
+
+				// use the SqlParameters to pass the value, can not hardcode, can not take from user, must specify the source column
+				// setting up the values for one parameter for one command
+				/*
+				SqlParameter sp = new SqlParameter();
+				sp.ParameterName = "@Name";
+				sp.SourceCoulmn = "Name";
+				sp.SourceVersion = DataRowVersion.Current;
+				*/
+
+				// short-hand
+				cmdUpdate.Parameter.Add(new SqlParameter {ParameterName = "@Name", SourceColumn = "Name", SourceVersion = DataRowVersion.Current});
+				cmdUpdate.Parameter.Add(new SqlParameter {ParameterName = "@Basic", SourceColumn = "Basic", SourceVersion = DataRowVersion.Current});
+				cmdUpdate.Parameter.Add(new SqlParameter {ParameterName = "@DeptNo", SourceColumn = "DeptNo", SourceVersion = DataRowVersion.Current});
+				// where clause values should be the original values, as don't want to use the new value (accidentaly updated)
+				cmdUpdate.Parameter.Add(new SqlParameter {ParameterName = "@EmpNo", SourceColumn = "EmpNo", SourceVersion = DataRowVersion.Origin});
+
+				da.UpdateCommand = cmdUpdate;
+				da.DeleteCommand = cmdDelete;
+				da.InsertCommand = cmdInsert;
+				da.Update(ds, "Emps"); => loops through entire rows and looks for the modified RowStates => uses the user defined Update, Delete, Insert commands to perform the operations based on the modification
+
+Flow!!
+- create connection
+- create command from the connection/ create command and link(set properties) it to the connection
+- create data adapter and link(set property => based on the command type) the adapter to the command
+- create a DataSet/DataTable, use the DataAdapter to 
+	fill the DataSet
+		da.Fill(ds, "Emps"); 	// nameing the DataTable in the ds DataSet to Emps
+	update the database table from DataTable/DataSet
+		da.Update(ds, "Emps");
+- use the DataSet for the desired purpose
+
+** in winForms, use the <DataGridView>.DataSource = <DataSet>.Tables["<DataTable_Name>"] to set the data source as the Data set => to view the data from the DataSet
+	
+	
+** working with only one Data-table => use DataTable
+** working with multiple Data-table => use DataSet
+=======================================================================================================================================================================
+
+Approaches for creating web-based application in .Net Framework
+	1. Web Application => used web fomrs; came earlier; Event driven approach; less contoller over how application ran, less extensible; a lot code automatically generated => heavy pages => contained unnecessary information; easier approach
+	2. ASP .Net MVC => Model View and Controller; less automatically generated code => more control, more extensible => lighter pages; comparatively difficult
+
+Approaches for creating web-based application in .Net Core
+	1. ASP .Net MVC Core => differs extremely in term of configuration from ASP .Net MVC
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+MVC 
+	Reason => seperation of concern => single responsibilty
+	
+	Request -> Contoller -> decides what view (Html/UI) to show + what model (Data of the Application) to send to the view
+
+	- Model
+		major logic
+		is a class => properties (data) + methods (to work on the data) + methods (to persist the data)
+
+	- View
+		to show the data
+		all of WPT
+		static view
+		dynamic view => C# code (any .Net code) written to dynamically generate the HTML code => Razor code => Rendered by the Razor View engine
+
+	- Controller
+		does the passing around of data /handling of request		
+		
+			
+
+=======================================================================================================================================================================
+Lab Work --
+1. write update and delete queries for the employee
+2. wrtie a method to write an employee object with specified employee no/ GetSingleEmployee()
+	i/p - empNo
+	o/p - employee object
+3. GetAllEmployees() => return a list of all employees

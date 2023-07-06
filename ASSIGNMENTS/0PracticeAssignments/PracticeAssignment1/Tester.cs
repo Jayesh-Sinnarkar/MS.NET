@@ -40,7 +40,7 @@ namespace PracticeAssignment1
                             CompanyUtils.DeRegisterCompany(Console.ReadLine());
                             Console.WriteLine();
                             break;
-                        case 0:
+                        case 0://EXIT
                             exit = true;
                             Console.WriteLine("Thank you...");
                             break;
@@ -99,7 +99,8 @@ namespace PracticeAssignment1
                             selectedComp.DeleteEmployee(remEmp);
                             Console.WriteLine();
                             break;
-                        case '0':
+
+                        case '0'://Exit
                             exitCompany = true;
                             Console.WriteLine("Thank you...");
                             break;

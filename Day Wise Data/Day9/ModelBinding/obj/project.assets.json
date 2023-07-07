@@ -9717,24 +9717,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vikra\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\jayes\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Trainings\\ActsJune23\\Websites\\ModelBinding\\ModelBinding.csproj",
+      "projectUniqueName": "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\Day Wise Data\\Day9\\ModelBinding\\ModelBinding.csproj",
       "projectName": "ModelBinding",
-      "projectPath": "D:\\Trainings\\ActsJune23\\Websites\\ModelBinding\\ModelBinding.csproj",
-      "packagesPath": "C:\\Users\\vikra\\.nuget\\packages\\",
-      "outputPath": "D:\\Trainings\\ActsJune23\\Websites\\ModelBinding\\obj\\",
+      "projectPath": "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\Day Wise Data\\Day9\\ModelBinding\\ModelBinding.csproj",
+      "packagesPath": "C:\\Users\\jayes\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jayes\\OneDrive\\Documents\\MS.NET\\Day Wise Data\\Day9\\ModelBinding\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\vikra\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\jayes\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

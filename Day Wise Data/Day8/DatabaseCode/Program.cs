@@ -6,10 +6,10 @@ namespace DatabaseCode
     {
         static void Main()
         {
-            //Connect();
+            Connect();
             //Insert1();
 
-            Employee employee = new Employee { EmpNo=7,Name="Alfred D'Mello",Basic=12000,DeptNo=30};
+            //Employee employee = new Employee { EmpNo=7,Name="Alfred D'Mello",Basic=12000,DeptNo=30};
             //Insert2(employee);
             //Insert3(employee);
             //Insert4(employee);
@@ -18,7 +18,7 @@ namespace DatabaseCode
             //DataReader2();
             //MARS();
             //CallFuncReturningSqlDataReader();
-            Transactions();
+            //Transactions();
         }
         static void Connect()
         {

@@ -9,3 +9,14 @@ D:\Trainings\ActsJune23\Day8\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.
 D:\Trainings\ActsJune23\Day8\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\Trainings\ActsJune23\Day8\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 D:\Trainings\ActsJune23\Day8\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day8\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day8\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day8\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day8\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day8\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day8\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day8\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day8\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day8\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day8\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\jayes\OneDrive\Documents\MS.NET\Day Wise Data\Day8\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

@@ -11,7 +11,7 @@ namespace WebApplication1.Controllers
         //Default/Index/100?c=3
 
 
-        public IActionResult Index(int? id, int? a, int? b, int c=0)
+        public IActionResult Index(int? id, int? a=0, int? b=0, int c=0)
         {
             //if(id==null)
             //    return NotFound();

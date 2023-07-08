@@ -50,7 +50,7 @@ namespace WebAppTest1.Controllers
         // POST: EmployeesController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, Employee emp)
+        public ActionResult Edit(Employee emp)
         {
             try
             {
@@ -66,7 +66,7 @@ namespace WebAppTest1.Controllers
         // GET: EmployeesController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+                return View(Employee.GetEmpById(id));       
         }
 
         // POST: EmployeesController/Delete/5
@@ -76,6 +76,7 @@ namespace WebAppTest1.Controllers
         {
             try
             {
+                Employee.DeleteEmployee(id);
                 return RedirectToAction(nameof(Index));
             }
             catch

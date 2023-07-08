@@ -141,5 +141,33 @@ namespace WebAppTest1.Models
             }
             return message;
         }
+
+        public static string DeleteEmployee(int id)
+        {
+            string message = null;
+            using(SqlConnection cn = new SqlConnection())
+            {
+                cn.ConnectionString= @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ActsJune23;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+                cn.Open();
+                using(SqlCommand cmd =cn.CreateCommand())
+                {
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "Delete from Employees where EmoNo=@EmpNo";
+                    cmd.Parameters.AddWithValue("@EmpNo", id);
+                    try
+                    {
+                        int rowCount = cmd.ExecuteNonQuery();
+                        message = rowCount + " records are deleted.";
+                    }catch(Exception ex)
+                    {
+                        message = "Could Nor Delete Records: "+ex.Message;
+                    }
+                }
+
+            }
+
+
+            return message;
+        }
     }
 }

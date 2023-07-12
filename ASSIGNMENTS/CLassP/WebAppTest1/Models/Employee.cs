@@ -6,8 +6,8 @@ namespace WebAppTest1.Models
 {
     public class Employee
     {
-        private int count = 15;
-        private int empNo = 0;
+        private int count = 0;
+        
         public int EmpNo { get; set; }
         public string Name { get; set; }
         public decimal Basic { get; set; }
@@ -16,7 +16,8 @@ namespace WebAppTest1.Models
         //CONSTRUCTORS
         public Employee()
         {
-
+            ++count;
+            this.EmpNo = count;
         }
         public Employee(string name = "default", decimal basic = 0, int deptNo = 0)
         {
@@ -168,6 +169,37 @@ namespace WebAppTest1.Models
 
 
             return message;
+        }
+
+        public static string AddEmployee(Employee emp)
+        {
+            string message = null;
+            using(SqlConnection cn = new SqlConnection())
+            {
+                cn.ConnectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ActsJune23;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+                cn.Open();
+                using(SqlCommand cmd = cn.CreateCommand())
+                {
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "insert into Employees values(@EmpNo,@Name,@Basic,@DeptNo)";
+                    cmd.Parameters.AddWithValue("@EmpNo", emp.EmpNo);
+                    cmd.Parameters.AddWithValue("@Name", emp.Name);
+                    cmd.Parameters.AddWithValue("@Basic", emp.Basic);
+                    cmd.Parameters.AddWithValue("@DeptNo", emp.DeptNo);
+
+                    try
+                    {
+                        int rowCount = cmd.ExecuteNonQuery();
+                        message = emp.ToString + " Added to record";
+                    }catch(Exception ex)
+                    {
+                        message = " Could not add employee: "+ex.Message;
+                    }
+
+                    return message;
+
+                }
+            }
         }
     }
 }

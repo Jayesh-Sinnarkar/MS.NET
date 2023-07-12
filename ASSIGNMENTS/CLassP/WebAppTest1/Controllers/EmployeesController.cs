@@ -23,16 +23,18 @@ namespace WebAppTest1.Controllers
         // GET: EmployeesController/Create
         public ActionResult Create()
         {
-            return View();
+            Employee e= new Employee();
+            return View(e);
         }
 
         // POST: EmployeesController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Employee emp)
         {
             try
             {
+                Employee.AddEmployee(emp);
                 return RedirectToAction(nameof(Index));
             }
             catch

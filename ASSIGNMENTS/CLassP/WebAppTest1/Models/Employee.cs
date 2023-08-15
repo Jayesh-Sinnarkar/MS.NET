@@ -1,21 +1,70 @@
 ﻿using NuGet.Protocol.Plugins;
 using Microsoft.Data.SqlClient;
 using System.Data;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json.Serialization;
 
 namespace WebAppTest1.Models
 {
     public class Employee
     {
-        private int count = 15;
-        private int empNo = 0;
+        private static int count;
+        static Employee()
+        {
+            using (SqlConnection cn = new SqlConnection())
+            {
+                cn.ConnectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ActsJune23;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+                cn.Open();
+                using (SqlCommand cmd = cn.CreateCommand())
+                {
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "select count('EmoNo') from Employees";
+                    try
+                    {
+                        count =(int) cmd.ExecuteScalar();
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.ToString());
+                    }
+                }
+            }
+        }
+
+
+        public int Count
+        {
+            get { return count; }
+            set { count = value; }
+        }
+        
+        
+        
+        [DisplayName("Employee Number")]
         public int EmpNo { get; set; }
+
+        [DisplayName("Employee Name")]
+        [Required(ErrorMessage ="Name is required")]
+        [StringLength(100)]
         public string Name { get; set; }
+
+
+        [DisplayName("Employee Salary")]
+        [Required(ErrorMessage ="Basic Salary is required.")]
+        [Range(10000,500000)]
         public decimal Basic { get; set; }
+
+        [DisplayName("Select Department")]
+        [Required(ErrorMessage ="Department Numer is Required.")]
+        [Range(1,10,ErrorMessage ="Department No should be between 1 to 10.")]
         public int DeptNo { get; set; }
 
         //CONSTRUCTORS
         public Employee()
         {
+            ++count;
+            this.EmpNo = count;
 
         }
         public Employee(string name = "default", decimal basic = 0, int deptNo = 0)
@@ -65,7 +114,7 @@ namespace WebAppTest1.Models
                                                          basic: rd.GetDecimal("Basic"),
                                                          deptNo: rd.GetInt32("DeptNo")));
 
-
+                                
                             }
                         }                    
                     }catch (Exception ex)
@@ -169,5 +218,37 @@ namespace WebAppTest1.Models
 
             return message;
         }
+
+        public static string AddEmployee(Employee e)
+        {
+            string message = null;
+            //e.EmpNo = ++e.Count;
+            using(SqlConnection cn = new SqlConnection())
+            {
+                cn.ConnectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ActsJune23;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+                cn.Open ();
+                using(SqlCommand cmd =cn.CreateCommand())
+                {
+                    cmd.CommandType = CommandType.Text;
+                    cmd.CommandText = "insert into Employees values(@EmpNo, @Name, @Basic,@DeptNo)";
+                    cmd.Parameters.AddWithValue("@EmpNo", e.EmpNo);
+                    cmd.Parameters.AddWithValue("@Name", e.Name);
+                    cmd.Parameters.AddWithValue("@Basic", e.Basic);
+                    cmd.Parameters.AddWithValue("@DeptNo", e.DeptNo);
+                    try
+                    {
+                        int rowCount = cmd.ExecuteNonQuery();
+                        message = e.ToString + " empoyee added to record";
+                    }
+                    catch (Exception ex)
+                    {
+                        message = ex.Message;
+                    }
+                }          
+            }
+            return message;
+        }
+
+
     }
 }

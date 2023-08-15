@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using WebAppTest1.Models;
 
 namespace WebAppTest1.Controllers
@@ -23,16 +24,23 @@ namespace WebAppTest1.Controllers
         // GET: EmployeesController/Create
         public ActionResult Create()
         {
+            List<SelectListItem> deptList = new List<SelectListItem>();
+            foreach (Department d in Department.GetAllDepartments())
+            {
+                deptList.Add(new SelectListItem() { Text= d.DeptName, Value=d.DeptName });
+            }
+            ViewBag.Departments = deptList;
             return View();
         }
 
         // POST: EmployeesController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Employee emp)
         {
             try
             {
+                Employee.AddEmployee(emp);
                 return RedirectToAction(nameof(Index));
             }
             catch

@@ -1,0 +1,16 @@
+1. Add a Controller
+2. Add action methods
+3. Add views
+4. Change the default Controller and Action Method
+5. Pass parameters to view using route
+6. Pass parameters to view using querystring
+7. Add your own layout
+8. Add a view which uses your layout
+9. Add a view which uses no layout
+10. Add a view which uses the layout defined in ViewStart
+11. Change the layout in ViewStart to use your layout
+12. Pass values from controller to View
+13. Display values in View received from controller
+14. use razor code inside html code
+15. use html code inside razor code
+

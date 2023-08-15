@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\jayes\OneDrive\Documents\MS.NET\ASSIGNMENTS\CLassP\WebAppTest1
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/jayes/OneDrive/Documents/MS.NET/ASSIGNMENTS/CLassP/WebAppTest1/Views/Employees/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/jayes/OneDrive/Documents/MS.NET/ASSIGNMENTS/CLassP/WebAppTest1/Views/Employees/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

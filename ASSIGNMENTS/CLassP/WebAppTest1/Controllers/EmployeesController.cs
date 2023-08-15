@@ -24,6 +24,7 @@ namespace WebAppTest1.Controllers
         // GET: EmployeesController/Create
         public ActionResult Create()
         {
+<<<<<<< HEAD
             List<SelectListItem> deptList = new List<SelectListItem>();
             foreach (Department d in Department.GetAllDepartments())
             {
@@ -31,6 +32,10 @@ namespace WebAppTest1.Controllers
             }
             ViewBag.Departments = deptList;
             return View();
+=======
+            Employee e= new Employee();
+            return View(e);
+>>>>>>> e11eed36996b8195472e933c14bc30d188dc546d
         }
 
         // POST: EmployeesController/Create

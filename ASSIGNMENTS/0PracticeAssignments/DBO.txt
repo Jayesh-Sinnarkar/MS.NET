@@ -1,0 +1,61 @@
+-------------------------CREATING EMP TABLE------------------------------------
+----------Employees------------
+
+CREATE TABLE [dbo].[Employees] (
+    [EmpNo]            INT            IDENTITY (1, 1) NOT NULL UNIQUE,
+    [Name]         VARCHAR(50)  NOT NULL,
+    [DeptNo] INT NOT NULL, 
+    [Email] VARCHAR(50) NOT NULL UNIQUE, 
+    CONSTRAINT [PK_Employees] PRIMARY KEY CLUSTERED ([EmpNo] ASC),
+    CONSTRAINT [FK_Employees_Departmets_departmentDeptId] FOREIGN KEY ([DeptNo]) REFERENCES [dbo].[Departmets] ([DeptNo]) ON DELETE CASCADE
+)
+
+
+
+----------Departments------------
+CREATE TABLE [dbo].[Departmets] (
+    [DeptNo]   INT            IDENTITY (1, 1) NOT NULL,
+    [DeptName] VARCHAR(50) NOT NULL UNIQUE,
+    CONSTRAINT [PK_Departmets] PRIMARY KEY CLUSTERED ([DeptNo] ASC)
+);
+
+--------------------------------------------------------------------------------------------
+New Tables:
+
+-----------Employees---------------
+CREATE TABLE [dbo].[Employees] (
+    [EmpNo]  INT             NOT NULL,
+    [Name]   VARCHAR (50)    NOT NULL,
+    [Basic]  DECIMAL (18, 2) NOT NULL,
+    [DeptNo] INT             NOT NULL,
+    PRIMARY KEY CLUSTERED ([EmpNo] ASC),
+    CONSTRAINT [FK_Employees_Departments] FOREIGN KEY ([DeptNo]) REFERENCES [dbo].[Departments] ([DeptNo]) ON DELETE CASCADE
+);
+
+------------Departments------------
+CREATE TABLE [dbo].Departments
+(
+	[DeptNo] INT NOT NULL PRIMARY KEY, 
+    [DeptName] VARCHAR(50) NOT NULL UNIQUE
+)
+
+--------------Procedures---------------
+
+CREATE PROCEDURE [dbo].InsertEmployees
+	@EmoNo int,
+	@Name varchar(50),
+	@Basic decimal(18,2),
+	@DeptNo int
+AS 
+	insert into Employees values(@EmoNo,@Name,@Basic,@DeptNo);
+            
+RETURN 0
+
+
+
+CREATE PROCEDURE [dbo].SelectEmployee
+	@EmpNo int
+AS
+	SELECT * from Employees where EmpNo = @EmpNo;
+
+
